@@ -1,0 +1,61 @@
+
+html {
+  height: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'playregular', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.page {
+  background: #F5F5F5;
+}
+
+

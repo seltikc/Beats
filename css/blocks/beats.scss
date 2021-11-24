@@ -1,0 +1,25 @@
+.headphone {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  color: $color-title;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+}
+
+.headphones__text {
+  font-family: 'alegreya_sansregular', Helvetica, sans-serif;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.btn-wrap {
+  margin-bottom: 70px;
+}
+
