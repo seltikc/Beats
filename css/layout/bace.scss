@@ -1,5 +1,6 @@
 
-html {
+html,
+body {
   height: 100%;
 }
 
@@ -10,27 +11,37 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
   font-family: 'playregular', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  height: 100%;
-  margin: 0;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 940px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 p {
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
   padding: 0;
   margin: 0;
-}
-
-ul li {
-  list-style: none;
+  li {
+    list-style: none;
+  }
 }
 
 button {
@@ -39,8 +50,18 @@ button {
   cursor: pointer;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin-top: 0;
   font-weight: normal;
 }
 
@@ -49,13 +70,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
 
-.page {
-  background: #F5F5F5;
-}
 
 

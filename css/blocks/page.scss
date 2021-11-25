@@ -1,0 +1,36 @@
+.page {
+  background: #F5F5F5;
+  height: 100vh;
+  min-height: 650px;
+  color: $color-text;
+}
+
+.page__container {
+  background: url("../../image/ellipse.png") right center / 50% no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 50px 0;
+}
+
+.page__title-section {
+  width: 46%;
+}
+
+.page__main-title {
+  color: $color-title;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.page__title-desc {
+  font-family: 'alegreya_sansregular', Helvetica, sans-serif;
+  font-size: 21px;
+  color: $color-title;
+  margin-bottom: 36px;
+  padding-right: 11%;
+}

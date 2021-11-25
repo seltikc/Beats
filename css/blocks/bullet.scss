@@ -1,32 +1,13 @@
 .bullet {
-  padding-bottom: 50px;
-  margin-bottom: 101px;
-}
-
-.bullets {
   display: flex;
-  max-width: 490px;
-  justify-content: space-between;
-
-  &__item {
-    padding-left:60px;
-    margin-left: 10px;
-  }
-  &__item:first-child {
-    margin-left: 0;
-  }
-
-  &__item--aer {
-    background: url("../../image/bullet/ear.png") no-repeat;
-  }
-
-  &__item--battery {
-    background: url("../../image/bullet/battery.png") no-repeat;
-  }
-
-  &__item--fork {
-    background: url("../../image/bullet/fork.png") no-repeat;
-  }
 }
 
+.bullet__icon {
+  width: 41px;
+  height: 41px;
+  margin-right: 10px;
+}
 
+.bullet__text {
+  max-width: 114px;
+}

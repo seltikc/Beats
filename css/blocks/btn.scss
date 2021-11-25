@@ -4,7 +4,15 @@
   text-decoration: none;
   font-weight: 700;
   padding: 18px 41px;
-  color: $color-white;
-  background: $color-red;
   border-radius: 100px;
+
+  &-theme--red {
+    background: $color-red;
+    color: $color-white;
+    transition: 0.2s linear;
+
+    &:hover {
+      background: $coloro-red-hover;
+    }
+  }
 }

@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  margin-bottom: 94px;
 }
 
 .logo {
@@ -11,53 +9,50 @@
   height: 40px;
   
   &__image {
-    display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 }
 
-.nav,.nav__list {
+.menu__list {
   display: flex;
+  justify-content: space-between;
+}
   
-  &__item {
-    margin-left: 13.5px;
-    margin-right: 13.5px;
-  }
-  &__item:last-child,:first-child {
-    margin-left: 0;
+.menu__item {
+  margin-right: 27px;
+  
+  &:last-child {
     margin-right: 0;
   }
-  &__link {
-    text-decoration: none;
-    color: $color-title;
-  }
+}
+.menu__link {
+  text-decoration: none;
+  color: $color-title;
 }
 
 .address {
   font-style: normal;
   padding-left: 20px;
   position: relative;
+}
 
-  &__phone {
-    font-size: 18px;
-    text-decoration: none;
-    color: $color-title;
-  }
+.phone-number {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: $color-title;
 
-  &__phone::after {
-    content: "";
-    display: block;
-    position: absolute;
+  &__icon-img {
     width: 14px;
     height: 15px;
-    background: url("../../image/phone.png");
-    top: 3px;
-    right: 0;
-    left: 0;
-  }
+    margin-right: 10px;
+  } 
 }
+
+
+
+
 
 
 
