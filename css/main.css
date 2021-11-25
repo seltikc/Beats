@@ -447,7 +447,7 @@ table {
 }
 
 .page__container {
-  background: url("../../image/ellipse.png") right center/50% no-repeat;
+  background: url("../image/ellipse.png") right center/50% no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
