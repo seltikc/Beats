@@ -1,0 +1,35 @@
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 4%;
+  position: relative;
+
+  &::before {
+    content: url("../image/combined.png");
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
