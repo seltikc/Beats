@@ -5,6 +5,8 @@
   font-weight: 700;
   padding: 18px 41px;
   border-radius: 100px;
+  border: none;
+  cursor: pointer;
 
   &-theme--red {
     background: $color-red;
@@ -13,6 +15,16 @@
 
     &:hover {
       background: $coloro-red-hover;
+    }
+  }
+  &-theme--transparent {
+    background: transparent;
+    color: $color-white;
+    text-transform: none;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-red;
     }
   }
 }

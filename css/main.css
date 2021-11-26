@@ -557,6 +557,8 @@ table {
   font-weight: 700;
   padding: 18px 41px;
   border-radius: 100px;
+  border: none;
+  cursor: pointer;
 }
 .btn-theme--red {
   background: #E01F3D;
@@ -566,6 +568,16 @@ table {
 }
 .btn-theme--red:hover {
   background: #CA1B36;
+}
+.btn-theme--transparent {
+  background: transparent;
+  color: #FFFFFF;
+  text-transform: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.btn-theme--transparent:hover {
+  color: #E01F3D;
 }
 
 .bullets {
@@ -609,6 +621,12 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.section-font-color-white {
+  color: #FFFFFF;
+}
+.section-font-color-white .section__title {
+  color: inherit;
 }
 
 .section__title {
@@ -798,4 +816,113 @@ table {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.order-section {
+  background: url("../image/form-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 20px 12px;
+  border: 3px solid transparent;
+}
+.form__input--textarea {
+  height: 172px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #E01F3D;
+  outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 20px;
+  gap: 20px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("../../image/vector.svg") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+.radio__visible::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background: #E01F3D;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
 }

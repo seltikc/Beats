@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &-font-color-white {
+    color: $color-white;
+    .section__title {
+      color: inherit;
+    }
+  }
 }
 
 .section__title {
@@ -14,3 +21,6 @@
   text-align: center;
   color: $color-title;
 }
+
+
+
