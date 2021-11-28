@@ -342,6 +342,32 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "alegreya_sansbold";
+  src: url("../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya_sansregular";
+  src: url("../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "playbold";
+  src: url("../fonts/play-bold-webfont.woff2") format("woff2"), url("../fonts/play-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "playregular";
+  src: url("../fonts/play-regular-webfont.woff2") format("woff2"), url("../fonts/play-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/*COLOR*/
+/*Z-INDEX*/
 html,
 body {
   height: 100%;
@@ -416,38 +442,19 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "alegreya_sansbold";
-  src: url("../../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bold-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "alegreya_sansregular";
-  src: url("../../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-regular-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "playbold";
-  src: url("../../fonts/play-bold-webfont.woff2") format("woff2"), url("../../fonts/play-bold-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "playregular";
-  src: url("../../fonts/play-regular-webfont.woff2") format("woff2"), url("../../fonts/play-regular-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-/*COLOR*/
-/*Z-INDEX*/
-/*=========Blocks===========*/
+/*=========Components===========*/
 .page {
   background: #F5F5F5;
   height: 100vh;
   min-height: 650px;
   color: #666666;
+  position: relative;
+}
+.page::before {
+  content: url("../image/decor/rectangle.png");
+  position: absolute;
+  bottom: -27px;
+  right: 500px;
 }
 
 .page__container {
@@ -582,16 +589,41 @@ table {
   color: #E01F3D;
 }
 
-.bullets {
+.section {
+  height: 100vh;
+  min-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
-.bullets__item {
-  margin-right: 8px;
+.section-font-color-white {
+  color: #FFFFFF;
 }
-.bullets__item:last-child {
-  margin-right: 0;
+.section-font-color-white .section__title {
+  color: inherit;
+}
+.section--rhomb::before {
+  content: url("../image/decor/rhomb.png");
+  position: absolute;
+  top: -25px;
+  right: 500px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #292929;
 }
 
 .bullet {
@@ -610,34 +642,16 @@ table {
   max-width: 114px;
 }
 
-.section {
-  height: 100vh;
-  min-height: 650px;
+.bullets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-.section-font-color-white {
-  color: #FFFFFF;
+.bullets__item {
+  margin-right: 8px;
 }
-.section-font-color-white .section__title {
-  color: inherit;
-}
-
-.section__title {
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-  text-align: center;
-  color: #292929;
+.bullets__item:last-child {
+  margin-right: 0;
 }
 
 .headline {
@@ -646,7 +660,7 @@ table {
 }
 
 .hedline__title {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   color: #292929;
 }
 
@@ -670,7 +684,7 @@ table {
 .benefits__item::before {
   content: url("../image/combined.png");
   position: absolute;
-  top: 30px;
+  top: 50px;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -703,6 +717,7 @@ table {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 24px;
 }
 
 .benefit__icon {
@@ -717,6 +732,9 @@ table {
 
 .benefit__title {
   color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 7px;
 }
 
 .reviews__display {
@@ -770,6 +788,7 @@ table {
   font-weight: 700;
   color: #292929;
   margin-bottom: 27px;
+  margin-top: 27px;
 }
 
 .reviews__text {
@@ -789,6 +808,11 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.order-section {
+  background: url("../image/form-bg.png") center no-repeat;
+  background-size: cover;
 }
 
 .interactive-avatar {
@@ -818,11 +842,6 @@ table {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.order-section {
-  background: url("../image/form-bg.png") center no-repeat;
-  background-size: cover;
 }
 
 .form {
@@ -861,8 +880,9 @@ table {
 .form__input {
   width: 100%;
   border: none;
-  padding: 20px 12px;
+  padding: 18px 12px 20px 12px;
   border: 3px solid transparent;
+  border-radius: 4px;
 }
 .form__input--textarea {
   height: 172px;

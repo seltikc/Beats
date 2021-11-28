@@ -3,6 +3,15 @@
   height: 100vh;
   min-height: 650px;
   color: $color-text;
+  position: relative;
+
+  &::before {
+    content: url("../image/decor/rectangle.png");
+    position: absolute;
+    bottom: -27px;
+    right: 500px;
+    
+  }
 }
 
 .page__container {

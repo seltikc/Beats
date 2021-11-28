@@ -4,12 +4,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   &-font-color-white {
     color: $color-white;
     .section__title {
       color: inherit;
     }
+  }
+  &--rhomb::before {
+    content: url("../image/decor/rhomb.png");
+    position: absolute;
+    top: -25px;
+    right: 500px;
+
   }
 }
 
@@ -21,6 +29,7 @@
   text-align: center;
   color: $color-title;
 }
+
 
 
 
