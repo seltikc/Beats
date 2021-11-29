@@ -4,7 +4,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 27px;
 
   &:last-child {
     margin-right: 0;
@@ -13,7 +13,7 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: 36px;
 }
 
 .form__block {
@@ -46,6 +46,12 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
+
+.form__btns {
+  padding-top: 44px;
+}
+
 
