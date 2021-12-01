@@ -15,20 +15,27 @@
   &--rhomb::before {
     content: url("../image/decor/rhomb.png");
     position: absolute;
-    top: -25px;
-    right: 500px;
+    top: -1.56rem;
+    right: 31.25rem;
 
   }
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   text-align: center;
   color: $color-title;
+
+
+  &--reviews {
+    margin-bottom: 1.875rem;
+  }
 }
+
+
 
 
 

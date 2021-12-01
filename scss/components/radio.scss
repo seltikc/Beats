@@ -2,12 +2,12 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 20px;
-  gap: 20px;
+  margin-right: 1.06rem;
+  gap: 0.625rem;
 
   &--checkbox {
     .radio__visible {
-      border-radius: 0;
+      border-radius: 4px;
 
       &::before {
         background: url("../image/vector.svg") center center no-repeat;
@@ -27,16 +27,16 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 1.56rem;
+  height: 1.56rem;
   position: relative;
   border-radius: 50%;
   background: $color-white;
 
   &::before {
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 0.81rem;
+    height: 0.81rem;
     position: absolute;
     background: $color-red;
     border-radius: 50%;

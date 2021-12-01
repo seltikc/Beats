@@ -1,4 +1,8 @@
 
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -11,10 +15,10 @@ body {
 }
 
 body {
-  font-family: 'playregular', Helvetica, sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.1;
   position: relative;
   color: #666666;
 }

@@ -8,19 +8,19 @@
   &::before {
     content: url("../image/decor/rectangle.png");
     position: absolute;
-    bottom: -27px;
+    bottom: -1.68rem;
     right: 500px;
     
   }
 }
 
 .page__container {
-  background: url("../image/ellipse.png") right center / 50% no-repeat;
+  background: url("../image/ellipse.png") right center / 57% no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px 0;
+  padding: 1.56rem 0 3.125rem 0;
 }
 
 .page__title-section {
@@ -29,17 +29,18 @@
 
 .page__main-title {
   color: $color-title;
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 .page__title-desc {
-  font-family: 'alegreya_sansregular', Helvetica, sans-serif;
-  font-size: 21px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
   color: $color-title;
-  margin-bottom: 36px;
-  padding-right: 11%;
+  margin-bottom: 2.1rem;
+  padding-right: 22%;
 }
