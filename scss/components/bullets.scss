@@ -9,3 +9,9 @@
   }
 }
 
+.bullets {
+  @include tablets {
+    display: none;
+  }
+}
+

@@ -386,6 +386,7 @@ template {
 }*/
 /*COLOR*/
 /*Z-INDEX*/
+/*BREAKPOINTS*/
 html {
   font-size: 16px;
 }
@@ -405,7 +406,6 @@ body {
 body {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.1;
   position: relative;
   color: #666666;
@@ -414,12 +414,12 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
+  width: 95%;
   max-width: 940px;
   margin: 0 auto;
 }
@@ -472,6 +472,11 @@ table {
   color: #666666;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .page::before, .page ::after {
+    display: none;
+  }
+}
 .page::before {
   content: url("../image/decor/rectangle.png");
   position: absolute;
@@ -494,9 +499,34 @@ table {
   height: 100%;
   padding: 1.56rem 0 3.125rem 0;
 }
+@media screen and (max-width: 768px) {
+  .page__container {
+    background: url("../image/ellipse.png") top 150px center/45% no-repeat;
+    padding-bottom: 173px;
+  }
+}
 
 .page__title-section {
   width: 46%;
+}
+@media screen and (max-width: 768px) {
+  .page__title-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 .page__main-title {
@@ -516,6 +546,18 @@ table {
   margin-bottom: 2.1rem;
   padding-right: 22%;
 }
+@media screen and (max-width: 768px) {
+  .page__title-desc {
+    padding-right: 0;
+    padding: 0 22%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .header {
   display: -webkit-box;
@@ -526,6 +568,12 @@ table {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
 .logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -534,6 +582,12 @@ table {
 .logo__image {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -694,6 +748,12 @@ table {
 }
 .bullets__item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bullets {
+    display: none;
+  }
 }
 
 .headline {
@@ -1020,6 +1080,11 @@ table {
   top: 45%;
   right: 3%;
   z-index: 500;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {

@@ -3,6 +3,12 @@
   align-items: center;
 }
 
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
+
 .logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -10,6 +16,12 @@
   
   &__image {
     object-fit: cover;
+  }
+}
+
+.menu {
+  @include tablets {
+    display: none;
   }
 }
 
