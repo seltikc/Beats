@@ -587,6 +587,8 @@ table {
   position: absolute;
   top: 1px;
   left: -21px;
+  width: 14px;
+  height: 14px;
 }
 
 .btn {
@@ -670,6 +672,11 @@ table {
   width: 2.56rem;
   height: 2.56rem;
   margin-right: 0.625rem;
+}
+
+.bullet__svg {
+  width: 41px;
+  height: 41px;
 }
 
 .bullet__text {
