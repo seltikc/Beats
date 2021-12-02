@@ -7,7 +7,7 @@
 
   &--checkbox {
     .radio__visible {
-      border-radius: 4px;
+      border-radius: rem(4px);
 
       &::before {
         background: url("../image/vector.svg") center center no-repeat;

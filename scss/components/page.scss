@@ -1,7 +1,7 @@
 .page {
   background: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: $color-text;
   position: relative;
 
@@ -9,7 +9,7 @@
     content: url("../image/decor/rectangle.png");
     position: absolute;
     bottom: -1.68rem;
-    right: 500px;
+    right: rem(500px);
     
   }
 }
