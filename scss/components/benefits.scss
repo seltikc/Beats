@@ -7,12 +7,23 @@
   padding: 0 4%;
   position: relative;
 
+  @include tablets {
+    padding: 0 1%;
+  }
+
+
   &::before {
     content: url("../image/combined.png");
     position: absolute;
     top: 4.125rem;
     right: 0;
     transform: translateX(50%);
+  }
+
+  &::before {
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child {

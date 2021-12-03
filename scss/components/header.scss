@@ -1,6 +1,10 @@
 .header{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+
+  @include tablets {
+    justify-content: space-between;
+  }
 }
 
 .phone-number.header__phone-number {
@@ -10,13 +14,16 @@
 }
 
 .logo {
-  width: 2.5rem;
-  height: 2.5rem;
   margin-right: 2.375rem;
   
   &__image {
-    object-fit: cover;
+    width: 2.5rem;
+    height: 2.5rem;
   }
+}
+
+.menu {
+  padding-top: 10px;
 }
 
 .menu {
@@ -27,11 +34,13 @@
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
   
 .menu__item {
   margin-right: 1.68rem;
+  margin-bottom: rem(10px);
   
   &:last-child {
     margin-right: 0;
@@ -42,12 +51,14 @@
   color: $color-title;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 
 .address {
   font-style: normal;
   padding-left: 4.43rem;
   position: relative;
+  padding-top: rem(10px);
 }
 
 .phone-number {
@@ -58,11 +69,13 @@
   color: $color-title;
   position: relative;
 
-  &__icon-img {
-    width: 0.875rem;
-    height: rem(935px);
-    margin-right: 0.625rem;
-  } 
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    white-space: nowrap;
+  }
 }
 
 .phone-number__svg {

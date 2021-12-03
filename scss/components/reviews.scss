@@ -21,11 +21,22 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: 15.81rem;
   height: 16.5rem;
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__avatar-img {
@@ -35,14 +46,16 @@
 }
 
 .reviews__content {
-  flex: 1;
-  margin-left: 2.375rem;
-}
-
-.reviews__content {
   padding-top: 2.3rem;
   padding-right: 12%;
   line-height: 1.2;
+  flex: 1;
+  margin-left: 2.375rem;
+
+  @include tablets{
+    padding-right: 0;
+    margin-left: 0;
+  }
 }
 
 .reviews__title {

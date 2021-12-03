@@ -5,17 +5,18 @@
   color: $color-text;
   position: relative;
 
-  &::before,::after {
-    @include tablets {
-      display: none;
-    }
-  }
-
   &::before {
     content: url("../image/decor/rectangle.png");
     position: absolute;
     bottom: -1.68rem;
     right: rem(500px);
+  }
+
+  &::before {
+    @include tablets {
+      bottom: -85px;
+      right: 50px;
+    }
   }
 }
 
@@ -28,8 +29,8 @@
   padding: 1.56rem 0 3.125rem 0;
 
   @include tablets {
-    background: url("../image/ellipse.png") top 150px center / 45% no-repeat;
-    padding-bottom: 173px;
+    background: url("../image/ellipse.png") top 198px center / 45% no-repeat;
+    padding-bottom: 95px;
   }
 }
 
@@ -47,7 +48,6 @@
   }
 }
 
-
 .page__main-title {
   color: $color-title;
   font-size: 3rem;
@@ -55,6 +55,11 @@
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.375rem;
+  padding: 0 15px;
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
 }
 
 .page__title-desc {

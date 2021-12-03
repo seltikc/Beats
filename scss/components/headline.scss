@@ -10,4 +10,8 @@
 
 .hedline__subtitle {
     padding: 0 20%;
+
+    @include tablets {
+    padding: 0 10%;
+    }
 }
