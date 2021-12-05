@@ -17,7 +17,13 @@
     position: absolute;
     top: -1.56rem;
     right: 31.25rem;
+  }
 
+  &--rhomb::before {
+    @include tablets {
+      top: rem(-24px);
+      right: rem(50px);
+    }
   }
 }
 

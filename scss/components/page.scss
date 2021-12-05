@@ -14,7 +14,7 @@
 
   &::before {
     @include tablets {
-      bottom: -85px;
+      bottom: -20px;
       right: 50px;
     }
   }
@@ -55,7 +55,7 @@
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.375rem;
-  padding: 0 15px;
+  max-width: 630px;
 
   @include tablets {
     margin-bottom: 20px;

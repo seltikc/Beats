@@ -480,7 +480,7 @@ table {
 }
 @media screen and (max-width: 768px) {
   .page::before {
-    bottom: -85px;
+    bottom: -20px;
     right: 50px;
   }
 }
@@ -537,7 +537,7 @@ table {
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.375rem;
-  padding: 0 15px;
+  max-width: 630px;
 }
 @media screen and (max-width: 768px) {
   .page__main-title {
@@ -725,6 +725,12 @@ table {
   position: absolute;
   top: -1.56rem;
   right: 31.25rem;
+}
+@media screen and (max-width: 768px) {
+  .section--rhomb::before {
+    top: -1.5rem;
+    right: 3.125rem;
+  }
 }
 
 .section__title {
@@ -1104,7 +1110,6 @@ table {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 1.25rem;
-  margin-left: 0.625rem;
 }
 
 .form__btns {
