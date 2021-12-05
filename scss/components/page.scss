@@ -29,8 +29,12 @@
   padding: 1.56rem 0 3.125rem 0;
 
   @include tablets {
-    background: url("../image/ellipse.png") top 198px center / 45% no-repeat;
+    background: url("../image/ellipse.png") top 123px center / 45% no-repeat;
     padding-bottom: 95px;
+  }
+  
+  @include phones {
+    background: url("../image/ellipse.png") top 107px center / 71% no-repeat;
   }
 }
 
@@ -60,6 +64,13 @@
   @include tablets {
     margin-bottom: 20px;
   }
+
+  @include phones {
+    font-size: 32px;
+    line-height: 36px;
+    padding: 0 10%;
+    margin: 0;
+  }
 }
 
 .page__title-desc {
@@ -75,5 +86,10 @@
     padding: 0 22%;
     display: flex;
     justify-content: center;
+  }
+
+  @include phones{
+    width: 337px;
+    padding: 0;
   }
 }

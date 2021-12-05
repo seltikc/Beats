@@ -502,8 +502,13 @@ table {
 }
 @media screen and (max-width: 768px) {
   .page__container {
-    background: url("../image/ellipse.png") top 198px center/45% no-repeat;
+    background: url("../image/ellipse.png") top 123px center/45% no-repeat;
     padding-bottom: 95px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page__container {
+    background: url("../image/ellipse.png") top 107px center/71% no-repeat;
   }
 }
 
@@ -544,6 +549,14 @@ table {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .page__main-title {
+    font-size: 32px;
+    line-height: 36px;
+    padding: 0 10%;
+    margin: 0;
+  }
+}
 
 .page__title-desc {
   font-family: "Alegreya Sans", sans-serif;
@@ -563,6 +576,12 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page__title-desc {
+    width: 337px;
+    padding: 0;
   }
 }
 
@@ -744,6 +763,18 @@ table {
 .section__title--reviews {
   margin-bottom: 1.875rem;
 }
+@media screen and (max-width: 480px) {
+  .section__title--reviews {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title--delivery {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
 .bullet {
   display: -webkit-box;
@@ -794,6 +825,12 @@ table {
   margin-bottom: 1.125rem;
   color: #292929;
 }
+@media screen and (max-width: 480px) {
+  .hedline__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
 .hedline__subtitle {
   padding: 0 20%;
@@ -803,11 +840,24 @@ table {
     padding: 0 10%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hedline__subtitle {
+    padding: 0 6%;
+  }
+}
 
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -820,6 +870,12 @@ table {
 @media screen and (max-width: 768px) {
   .benefits__item {
     padding: 0 1%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+    margin-bottom: 24px;
   }
 }
 .benefits__item::before {
@@ -854,9 +910,22 @@ table {
 .benefit {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+}
 
 .benefit__image {
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-bottom: 0;
+  }
 }
 
 .benefit__image-wrap {
@@ -879,6 +948,19 @@ table {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 480px) {
+  .benefit-phones-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+}
+
 .benefit__text {
   margin-bottom: 0.4375rem;
 }
@@ -892,6 +974,11 @@ table {
 
 .benefit__desc {
   line-height: 1.2;
+}
+@media screen and (max-width: 480px) {
+  .benefit__desc {
+    padding-right: 5%;
+  }
 }
 
 .reviews__display {
@@ -913,6 +1000,12 @@ table {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -3.625rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    margin-bottom: 0;
+    padding: 37px 38px 110px 24px;
+  }
 }
 
 .reviews__display-inner {
@@ -973,9 +1066,19 @@ table {
   color: #292929;
   margin-bottom: 1.68rem;
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    margin-bottom: 10px;
+  }
+}
 
 .reviews__text {
   margin-bottom: 3.75rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews__text {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__author {
@@ -1039,6 +1142,11 @@ table {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 16%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
   }
 }
 
@@ -1111,6 +1219,13 @@ table {
       flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 480px) {
+  .form__controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .form__btns {
   padding-top: 1.625rem;
@@ -1137,6 +1252,11 @@ table {
           user-select: none;
   margin-right: 1.06rem;
   gap: 0.625rem;
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 10px;
+  }
 }
 .radio--checkbox .radio__visible {
   border-radius: 0.25rem;
@@ -1243,4 +1363,79 @@ table {
   background: #292929;
   height: 4px;
   border-radius: 15px;
+}
+
+.footer__wrap-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+}
+@media screen and (max-width: 480px) {
+  .footer__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__content {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media screen and (max-width: 480px) {
+  .footer__content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.footer__svg-phone {
+  width: 12px;
+  height: 12px;
+}
+
+.footer__phone {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: #292929;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-left: 10px;
+}
+.social__svg {
+  width: 30px;
+  height: 30px;
+  fill: #B3B3B3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.social__svg--active {
+  fill: #000;
+}
+.social__svg:hover {
+  fill: #000;
 }

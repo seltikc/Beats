@@ -1,9 +1,18 @@
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left
+  }
 }
 
 .benefit__image {
   margin-bottom: 1.5rem;
+  
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .benefit__image-wrap {
@@ -25,6 +34,14 @@
   transform: translate(-50%, -50%);
 }
 
+.benefit-phones-wrap {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}
+
 .benefit__text {
   margin-bottom: rem(7px);
 }
@@ -38,4 +55,8 @@
 
 .benefit__desc {
   line-height: 1.2;
+
+  @include phones {
+    padding-right: 5%;
+  }
 }

@@ -1,5 +1,9 @@
 .benefits {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -9,6 +13,11 @@
 
   @include tablets {
     padding: 0 1%;
+  }
+
+  @include phones {
+    padding: 0;
+    margin-bottom: 24px;
   }
 
 

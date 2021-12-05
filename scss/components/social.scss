@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-left: 10px;
+  }
+
+  &__svg {
+    width: 30px;
+    height: 30px;
+    fill: #B3B3B3;
+    transition: all 0.5s;
+  }
+
+  &__svg--active {
+    fill: #000;
+  }
+
+  &__svg:hover {
+    fill: #000;
+  }
+}
+
+
+

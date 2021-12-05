@@ -17,6 +17,11 @@
     transform: translateX(-50%);
     top: rem(-58px);
   }
+
+  @include phones {
+    margin-bottom: 0;
+    padding: 37px 38px 110px 24px;
+  }
 }
 
 .reviews__display-inner {
@@ -63,10 +68,18 @@
   font-weight: 700;
   color: $color-title;
   margin-bottom: 1.68rem;
+
+  @include phones {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__text {
   margin-bottom: 3.75rem;
+
+  @include phones {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__author {

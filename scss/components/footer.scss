@@ -1,0 +1,37 @@
+.footer__wrap-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer__content {
+  font-size: 18px;
+  line-height: 24px;
+
+  @include phones {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.footer__svg-phone {
+  width: 12px;
+  height: 12px;
+}
+
+.footer__phone {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: $color-title;
+}

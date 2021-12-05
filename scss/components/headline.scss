@@ -6,6 +6,11 @@
 .hedline__title {
   margin-bottom: 1.125rem;
   color: $color-title;
+
+  @include phones {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .hedline__subtitle {
@@ -13,5 +18,9 @@
 
     @include tablets {
     padding: 0 10%;
+    }
+
+    @include phones {
+      padding: 0 6%;
     }
 }
