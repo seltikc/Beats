@@ -4,8 +4,11 @@
   position: relative;
   left: rem(20px);
 
+  @include tablets {
+    left: rem(-27px);
+  }
+
   @include phones {
-    position: relative;
     left: rem(-4px);
   }
 
@@ -18,6 +21,11 @@
     height: rem(30px);
     fill: #B3B3B3;
     transition: all 0.5s;
+
+    @include tablets {
+      width: 2.075rem;
+      height: 2.075rem;
+    }
   }
 
   &__svg--active {

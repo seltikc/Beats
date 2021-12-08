@@ -1539,6 +1539,14 @@ table {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer__text {
+    font-size: 1.425rem;
+    line-height: 1.4rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .footer__text {
     margin-bottom: 0.8125rem;
@@ -1566,6 +1574,12 @@ table {
   text-decoration: none;
   color: #292929;
 }
+@media screen and (max-width: 768px) {
+  .footer__phone {
+    font-size: 1.1875rem;
+    margin-left: 0.3125rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .footer__phone {
     font-size: 1rem;
@@ -1582,9 +1596,13 @@ table {
   position: relative;
   left: 1.25rem;
 }
+@media screen and (max-width: 768px) {
+  .social {
+    left: -1.6875rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .social {
-    position: relative;
     left: -0.25rem;
   }
 }
@@ -1597,6 +1615,12 @@ table {
   fill: #B3B3B3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .social__svg {
+    width: 2.075rem;
+    height: 2.075rem;
+  }
 }
 .social__svg--active {
   fill: #000;
