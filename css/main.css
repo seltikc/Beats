@@ -504,6 +504,8 @@ table {
 @media screen and (max-width: 480px) {
   .page__container {
     background: url("../image/ellipse.png") top 107px center/71% no-repeat;
+    padding-bottom: 6.8375rem;
+    letter-spacing: 0.8px;
   }
 }
 .page__container::before {
@@ -516,6 +518,12 @@ table {
   .page__container::before {
     bottom: 0rem;
     right: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page__container::before {
+    bottom: 0.7rem;
+    right: 2.6rem;
   }
 }
 
@@ -563,7 +571,7 @@ table {
     font-size: 2rem;
     line-height: 2.25rem;
     padding: 0 10%;
-    margin: 0;
+    margin-bottom: 0.9625rem;
   }
 }
 
@@ -589,8 +597,9 @@ table {
 }
 @media screen and (max-width: 480px) {
   .page__title-desc {
-    width: 21.0625rem;
+    width: 21.5625rem;
     padding: 0;
+    margin-bottom: 1.475rem;
   }
 }
 
@@ -608,6 +617,11 @@ table {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-right: 1.1875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding-right: 0;
   }
 }
 
@@ -721,6 +735,12 @@ table {
     padding: 1.525rem 2.96rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .btn-theme--red {
+    font-size: 1.1875rem;
+    padding: 1.525rem 2.66rem;
+  }
+}
 .btn-theme--transparent {
   background: transparent;
   color: #FFFFFF;
@@ -786,6 +806,8 @@ table {
   .section__title--delivery {
     font-size: 2rem;
     line-height: 2.25rem;
+    margin-bottom: 2.7375rem;
+    letter-spacing: 2.1px;
   }
 }
 
@@ -838,6 +860,11 @@ table {
     margin-bottom: 4.375rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .headline {
+    margin-bottom: 4.975rem;
+  }
+}
 
 .hedline__title {
   margin-bottom: 1.125rem;
@@ -847,6 +874,7 @@ table {
   .hedline__title {
     font-size: 2rem;
     line-height: 2.25rem;
+    letter-spacing: 0.0875rem;
   }
 }
 
@@ -936,6 +964,7 @@ table {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    margin-bottom: 42px;
   }
 }
 
@@ -977,7 +1006,7 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0.625rem;
+    margin-left: 1.125rem;
   }
 }
 
@@ -987,6 +1016,12 @@ table {
 @media screen and (max-width: 768px) {
   .benefit__text {
     margin-bottom: 1.3375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5375rem;
   }
 }
 
@@ -1062,6 +1097,12 @@ table {
     height: 8.125rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+}
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -1085,6 +1126,11 @@ table {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    padding-top: 1.2rem;
+  }
+}
 
 .reviews__title {
   font-size: 1.5rem;
@@ -1100,6 +1146,7 @@ table {
 @media screen and (max-width: 480px) {
   .reviews__title {
     margin-bottom: 0.625rem;
+    letter-spacing: 1.2px;
   }
 }
 
@@ -1133,6 +1180,13 @@ table {
   .reviews__switcher {
     position: relative;
     top: 1.4375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__switcher {
+    position: relative;
+    top: -0.9625rem;
+    left: 0.3125rem;
   }
 }
 
@@ -1294,6 +1348,7 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -1308,6 +1363,11 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__btns {
+    padding-top: 0.225rem;
   }
 }
 
@@ -1475,6 +1535,14 @@ table {
   .footer__content {
     margin-bottom: 1.25rem;
     text-align: center;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__text {
+    margin-bottom: 0.8125rem;
+    display: inline-block;
   }
 }
 
@@ -1482,12 +1550,26 @@ table {
   width: 0.75rem;
   height: 0.75rem;
 }
+@media screen and (max-width: 480px) {
+  .footer__svg-phone {
+    width: 0.875rem;
+    height: 0.875rem;
+    position: relative;
+    right: 2px;
+    top: 4px;
+  }
+}
 
 .footer__phone {
   display: block;
   list-style: none;
   text-decoration: none;
   color: #292929;
+}
+@media screen and (max-width: 480px) {
+  .footer__phone {
+    font-size: 1rem;
+  }
 }
 
 .social {
@@ -1499,6 +1581,12 @@ table {
           align-items: center;
   position: relative;
   left: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .social {
+    position: relative;
+    left: -0.25rem;
+  }
 }
 .social__item {
   margin-left: 0.625rem;

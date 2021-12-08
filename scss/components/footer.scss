@@ -21,12 +21,29 @@
   @include phones {
     margin-bottom: rem(20px);
     text-align: center;
+    letter-spacing: 0.5px;
+  }
+}
+
+.footer__text {
+
+  @include phones {
+    margin-bottom: rem(13px);
+    display: inline-block;
   }
 }
 
 .footer__svg-phone {
   width: rem(12px);
   height: rem(12px);
+
+  @include phones {
+    width: rem(14px);
+    height: rem(14px);
+    position: relative;
+    right: 2px;
+    top: 4px;
+  }
 }
 
 .footer__phone {
@@ -34,4 +51,8 @@
   list-style: none;
   text-decoration: none;
   color: $color-title;
+
+  @include phones {
+    font-size: rem(16px);
+  }
 }

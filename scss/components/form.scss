@@ -101,6 +101,7 @@
 
   @include phones {
     justify-content: center;
+    margin-bottom: rem(20px);
   }
 }
 
@@ -111,6 +112,10 @@
   @include tablets {
     display: flex;
     justify-content: center;
+  }
+
+  @include phones {
+    padding-top: 0.225rem;
   }
 }
 

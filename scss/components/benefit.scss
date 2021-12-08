@@ -7,7 +7,9 @@
 
   @include phones {
     display: flex;
-    text-align: left
+    text-align: left;
+    margin-bottom: 42px;
+
   }
 }
 
@@ -27,6 +29,7 @@
   background: $color-circle;
   border-radius: 50%;
   overflow: hidden;
+
 }
 
 .benefit__image-svg {
@@ -42,7 +45,7 @@
   @include phones {
     display: flex;
     flex-direction: column;
-    margin-left: rem(10px);
+    margin-left: 1.125rem;
   }
 }
 
@@ -51,6 +54,11 @@
 
   @include tablets{
     margin-bottom: 1.3375rem;
+  }
+
+  @include phones {
+    letter-spacing: rem(0.8px);
+    margin-bottom: 0.5375rem;
   }
 }
 

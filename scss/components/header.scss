@@ -2,16 +2,21 @@
   display: flex;
   align-items: flex-start;
 
+
   @include tablets {
     justify-content: space-between;
     padding-right: rem(19px);
   }
+
+  @include phones {
+    padding-right: 0;
+  }
 }
+
 
 .phone-number.header__phone-number {
   @include tablets {
     display: none;
-
   }
 }
 

@@ -43,6 +43,11 @@
     width: rem(130px);
     height: rem(130px);
   }
+
+  @include phones {
+    width: rem(140px);
+    height: rem(140px);
+  }
 }
 
 .reviews__avatar-img {
@@ -62,6 +67,10 @@
     padding-right: 0;
     margin-left: 0;
   }
+
+  @include phones {
+    padding-top: 1.2rem;
+  }
 }
 
 .reviews__title {
@@ -76,6 +85,7 @@
 
   @include phones {
     margin-bottom: rem(10px);
+    letter-spacing: 1.2px;
   }
 }
 
@@ -103,5 +113,11 @@
   @include tablets {
     position: relative;
     top: rem(23px);    
+  }
+
+  @include phones {
+    position: relative;
+    top: -0.9625rem;
+    left: rem(5px);
   }
 }

@@ -22,6 +22,8 @@
   
   @include phones {
     background: url("../image/ellipse.png") top 107px center / 71% no-repeat;
+    padding-bottom: 6.8375rem;
+    letter-spacing: 0.8px;
   }
 
   &::before {
@@ -33,6 +35,10 @@
     @include tablets {
       bottom: rem(0px);
       right: rem(64px);
+    }
+    @include phones {
+      bottom: 0.7rem;
+      right: 2.6rem;
     }
   }
 }
@@ -70,7 +76,7 @@
     font-size: rem(32px);
     line-height: rem(36px);
     padding: 0 10%;
-    margin: 0;
+    margin-bottom: 0.9625rem;
   }
 }
 
@@ -90,7 +96,8 @@
   }
 
   @include phones{
-    width: rem(337px);
+    width: 21.5625rem;
     padding: 0;
+    margin-bottom: 1.475rem;
   }
 }

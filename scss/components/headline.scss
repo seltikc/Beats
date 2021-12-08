@@ -5,6 +5,10 @@
   @include tablets {
     margin-bottom: 4.375rem;
   }
+
+  @include phones {
+    margin-bottom: 4.975rem;
+  }
 }
 
 .hedline__title {
@@ -15,7 +19,9 @@
   @include phones {
     font-size: rem(32px);
     line-height: rem(36px);
+    letter-spacing: rem(1.4px);
   }
+
 }
 
 .hedline__subtitle {
