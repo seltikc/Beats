@@ -1,6 +1,9 @@
-
 html {
   font-size: $baseFontSize;
+  @include tablets {
+    font-size: 2vmax;
+    font-size: $baseFontSize - 1px;
+  }
 }
 
 html,

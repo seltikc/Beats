@@ -12,19 +12,6 @@
       color: inherit;
     }
   }
-  &--rhomb::before {
-    content: url("../image/decor/rhomb.png");
-    position: absolute;
-    top: -1.56rem;
-    right: 31.25rem;
-  }
-
-  &--rhomb::before {
-    @include tablets {
-      top: rem(-24px);
-      right: rem(50px);
-    }
-  }
 }
 
 .section__title {
@@ -35,21 +22,32 @@
   text-align: center;
   color: $color-title;
 
+  @include tablets {
+    letter-spacing: 2.1px;
+  }
+  
+
   &--reviews {
     margin-bottom: 1.875rem;
   }
 
   &--reviews {
     @include phones {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: rem(32px);
+      line-height: rem(36px);
+    }
+  }
+
+  &--delivery {
+    @include tablets {
+      margin-bottom: rem(39px);
     }
   }
 
   &--delivery {
     @include phones {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: rem(32px);
+      line-height: rem(36px);
     }
   }
 }

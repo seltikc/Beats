@@ -11,13 +11,9 @@
   padding: 0 4%;
   position: relative;
 
-  @include tablets {
-    padding: 0 1%;
-  }
-
   @include phones {
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: rem(24px);
   }
 
 

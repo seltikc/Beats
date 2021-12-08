@@ -1,6 +1,10 @@
 .benefit {
   text-align: center;
 
+  @include tablets {
+    padding: 0 0.5%;
+  }
+
   @include phones {
     display: flex;
     text-align: left
@@ -38,12 +42,16 @@
   @include phones {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: rem(10px);
   }
 }
 
 .benefit__text {
   margin-bottom: rem(7px);
+
+  @include tablets{
+    margin-bottom: 1.3375rem;
+  }
 }
 
 .benefit__title {

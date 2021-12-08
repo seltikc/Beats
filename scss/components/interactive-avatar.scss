@@ -5,6 +5,11 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  margin-left: rem(8px);
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &--active {
     border-color: $color-red;

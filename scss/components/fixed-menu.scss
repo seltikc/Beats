@@ -1,7 +1,7 @@
 .fixed-menu {
   position: fixed;
-  top: 45%;
-  right: 3%;
+  top: 40%;
+  right: calc(50vw - 495px);
   z-index: $z-fixed-menu;
 
   @include tablets {

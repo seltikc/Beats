@@ -20,7 +20,7 @@
 
   @include phones {
     margin-bottom: 0;
-    padding: 37px 38px 110px 24px;
+    padding: rem(37px) rem(38px) rem(110px) rem(24px);
   }
 }
 
@@ -31,6 +31,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding-top: rem(26px);
   }
 }
 
@@ -69,16 +70,20 @@
   color: $color-title;
   margin-bottom: 1.68rem;
 
+  @include tablets {
+    margin-bottom: 1.28rem;
+  }
+
   @include phones {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 }
 
 .reviews__text {
-  margin-bottom: 3.75rem;
+  padding-bottom: rem(42px);
 
   @include phones {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 }
 
@@ -91,4 +96,12 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: rem(-6px);
+  left: rem(-4px);
+
+  @include tablets {
+    position: relative;
+    top: rem(23px);    
+  }
 }

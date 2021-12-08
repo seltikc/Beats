@@ -16,6 +16,9 @@
     &:hover {
       background: $coloro-red-hover;
     }
+    @include tablets {
+      padding: 1.525rem 2.96rem;
+    }
   }
   &-theme--transparent {
     background: transparent;

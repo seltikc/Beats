@@ -1,14 +1,16 @@
 .social {
   display: flex;
   align-items: center;
+  position: relative;
+  left: rem(20px);
 
   &__item {
-    margin-left: 10px;
+    margin-left: rem(10px);
   }
 
   &__svg {
-    width: 30px;
-    height: 30px;
+    width: rem(30px);
+    height: rem(30px);
     fill: #B3B3B3;
     transition: all 0.5s;
   }

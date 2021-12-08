@@ -1,9 +1,27 @@
+.container-form {
+  position: relative;
+
+  &--rhomb::before {
+    content: url("../image/decor/rhomb.png");
+    position: absolute;
+    top: rem(-191px);
+    right: rem(24px);
+  }
+
+  &--rhomb::before {
+    @include tablets {
+      top: -13.7rem;
+      right: 3.525rem;
+    }
+  }
+}
+
 .form {
   display: flex;
   
   @include tablets {
     flex-direction: column;
-    padding: 0 16%;
+    padding: 0 18%;
   }
 
   @include phones {
@@ -28,8 +46,16 @@
   display: flex;
   margin-bottom: 1.06rem;
 
+  @include tablets {
+    margin-bottom: 1.56rem;
+  }
+
   &--textarea {
     margin-bottom: 2.625rem;
+
+    @include tablets {
+      margin-bottom: 1.325rem;
+    }
   }
 }
 
@@ -54,7 +80,7 @@
     resize: none;
 
     @include tablets {
-      height: 82px;
+      height: rem(82px);
     }
   }
 
@@ -64,7 +90,7 @@
   }
 
   @include tablets {
-    padding: 8px 8px 8px 10px;
+    padding: rem(8px) rem(8px) rem(8px) rem(10px);
   }
 }
 
