@@ -4,6 +4,9 @@ html {
     font-size: 2vmax;
     font-size: $baseFontSize - 1px;
   }
+  @include phones {
+    font-size: 1.88vmax;
+  }
 }
 
 html,

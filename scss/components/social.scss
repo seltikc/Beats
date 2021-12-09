@@ -14,6 +14,10 @@
 
   &__item {
     margin-left: rem(10px);
+
+    @include phones {
+      margin-left: 0.825rem;
+    }
   }
 
   &__svg {
@@ -25,6 +29,11 @@
     @include tablets {
       width: 2.075rem;
       height: 2.075rem;
+    }
+
+    @include phones {
+      width: 1.675rem;
+      height: 1.675rem;
     }
   }
 
