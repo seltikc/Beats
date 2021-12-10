@@ -22,7 +22,7 @@
   
   @include phones {
     background: url("../image/ellipse.png") top 107px center / 71% no-repeat;
-    padding-bottom: 6.8375rem;
+    padding-bottom: 5.6375rem;
     letter-spacing: 0.8px;
   }
 
@@ -37,7 +37,7 @@
       right: rem(64px);
     }
     @include phones {
-      bottom: 0.7rem;
+      bottom: 0;
       right: 2.6rem;
     }
   }

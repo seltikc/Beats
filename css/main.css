@@ -392,7 +392,6 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 2vmax;
     font-size: 15px;
   }
 }
@@ -509,7 +508,7 @@ table {
 @media screen and (max-width: 480px) {
   .page__container {
     background: url("../image/ellipse.png") top 107px center/71% no-repeat;
-    padding-bottom: 6.8375rem;
+    padding-bottom: 5.6375rem;
     letter-spacing: 0.8px;
   }
 }
@@ -527,7 +526,7 @@ table {
 }
 @media screen and (max-width: 480px) {
   .page__container::before {
-    bottom: 0.7rem;
+    bottom: 0;
     right: 2.6rem;
   }
 }
@@ -812,7 +811,7 @@ table {
     font-size: 2rem;
     line-height: 2.25rem;
     margin-bottom: 2.7375rem;
-    letter-spacing: 2.1px;
+    letter-spacing: 0.03125rem;
   }
 }
 
@@ -1068,8 +1067,8 @@ table {
 }
 @media screen and (max-width: 480px) {
   .reviews__display {
-    margin-bottom: 0;
-    padding: 2.3125rem 2.375rem 6.875rem 1.5rem;
+    margin-bottom: 5rem;
+    padding: 2.3125rem 2.375rem 1.4375rem 1.5rem;
   }
 }
 
@@ -1248,6 +1247,12 @@ table {
     right: 3.525rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .container-form--rhomb::before {
+    top: -7.8rem;
+    right: 2.525rem;
+  }
+}
 
 .form {
   display: -webkit-box;
@@ -1353,7 +1358,7 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.875rem;
   }
 }
 
@@ -1387,6 +1392,9 @@ table {
           user-select: none;
   margin-right: 1.06rem;
   gap: 0.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 768px) {
   .radio {
@@ -1402,7 +1410,7 @@ table {
   border-radius: 0.25rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../image/checkmark.svg") center no-repeat;
+  background: url("../image/checkmark.svg") center no-repeat;
 }
 
 .radio__elem {
@@ -1506,9 +1514,9 @@ table {
 }
 
 .footer {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footer__wrap-map {
@@ -1519,8 +1527,17 @@ table {
 
 .footer__wrap-img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer__box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
 }
 
 .footer__header {
@@ -1558,7 +1575,7 @@ table {
 
 @media screen and (max-width: 768px) {
   .footer__text {
-    font-size: 1.425rem;
+    font-size: 1.225rem;
     line-height: 1.4rem;
     display: inline-block;
     margin-bottom: 0.5rem;

@@ -13,6 +13,11 @@
       top: -13.7rem;
       right: 3.525rem;
     }
+
+    @include phones {
+      top: -7.8rem;
+      right: 2.525rem;
+    }
   }
 }
 
@@ -101,7 +106,7 @@
 
   @include phones {
     justify-content: center;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(14px);
   }
 }
 
