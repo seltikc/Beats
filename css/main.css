@@ -1444,7 +1444,7 @@ table {
 .fixed-menu {
   position: fixed;
   top: 40%;
-  right: calc(50vw - 495px);
+  right: calc(50vw - 555px);
   z-index: 500;
 }
 @media screen and (max-width: 768px) {
@@ -1674,4 +1674,21 @@ table {
 }
 .social__svg:hover {
   fill: #000;
+}
+
+.products-section {
+  background-color: #F8FAF9;
+}
+
+.product__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__inner {
+  max-width: 26.1875rem;
 }
