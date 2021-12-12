@@ -1,0 +1,7 @@
+.product__dropdown {
+  width: 273px;
+  height: 294px;
+  background: #8d8989;
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+}

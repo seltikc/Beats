@@ -1,0 +1,38 @@
+.product__dropdown {
+  width: rem(273px);
+  height: rem(294px);
+
+  background-color: rgba(213, 213, 213, 0.8);
+  border-radius: rem(4px);
+  margin-left: rem(90px);
+  margin-top: rem(-91px);
+  position: absolute;
+  left: rem(99999px);
+  opacity: 0;
+  transition:opacity 0.5s linear;
+}
+
+.product__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: rem(24px) rem(25px) rem(24px) rem(24px);
+}
+
+.product__menu-item {
+  color: #000;
+  margin-bottom: rem(22px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.product__menu-svg {
+  width: rem(32px);
+  height: rem(32px);
+}
+
+.dt {
+  text-align: right;
+}

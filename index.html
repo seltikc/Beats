@@ -159,16 +159,78 @@
       <section class="section products-section">
         <div class="container">
           <div class="products-slider">
-            <a class="products-slider__arrows products-slider__arrows--left" href="#"></a>
-            <a class="products-slider__arrows products-slider__arrows--right" href="#"></a>
+            <a class="products-slider__arrows products-slider__arrows--left" href="#">
+            </a>
+            <a class="products-slider__arrows products-slider__arrows--right" href="#">
+            </a>
             <ul class="products">
               <li class="products__item product">
                 <div class="product__container">
                   <div class="product__wrap-img">
-                    <img class="product__image" src="image/solo-3.png" alt="solo">
+                    <picture>
+                      <source
+                      srcset="image/product/solo-m.png"
+                      media="(max-width: 480px)"
+                      alt="<= 480"
+                      type="image/png"
+                      >
+                      <source
+                      srcset="image/product/solo-t.png"
+                      media="(max-width: 768px)"
+                      alt="<= 768"
+                      type="image/png"
+                      >
+                      <source
+                      srcset="image/product/solo.png"
+                      media="(min-width: 769px)"
+                      alt=">= 768"
+                      type="image/png"
+                      >
+                      <img class="product__image" src="image/product/solo.png" alt="solo">
+                    </picture>
                   </div>
                   <div class="product__inner">
-                    <div class="product__structure"></div>
+                    <div class="product__structure">
+                      <div class="product__gear-bg">
+                        <svg class="product__gear">
+                          <use xlink:href="image/sprite.svg#gear"></use>
+                        </svg>
+                      </div>
+                      <div class="product__dropdown">
+                        <ul class="product__menu">
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#bluetooth"></use>
+                            </svg>
+                          <div>Bluetooth</div><span>4.0</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#range"></use>
+                            </svg>
+                              <span>Дальность</span><span>12 м</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#charge"></use>
+                            </svg>
+                          <div>Зарядка</div><span>3 ч</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#warranty"></use>
+                            </svg>
+                          <div>Вес</div><span>215гр</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#weight"></use>
+                            </svg>
+                            <div>Гарантия</div><span>1 год</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                     <h2 class="product__subtitle">beats solo 3. цвет «атласное серебро»</h2>
                     <div class="product__content">
                       <div class="product__desc">
@@ -177,16 +239,16 @@
                       <ul class="product__specifications">
                         <li class="product__charging">
                           <span>Зарядка</span>
-                          <div>2 часа</div>
+                          <div class="product__clock">2 часа</div>
                         </li>
                         <li class="product__weight">
                           <span>Вес</span>
-                          <div>215 грамм</div>
+                          <div class="product__clock">215 грамм</div>
                         </li>
                       </ul>
                       <div class="product__order">
                         <div class="product__price">14 990 ₽</div>
-                        <a class="btn btn-theme--red" href="#">заказать</a>
+                        <a class="btn btn-theme--red btn-theme--price" href="#">заказать</a>
                       </div>
                     </div>
                   </div>
