@@ -4,7 +4,6 @@
 
   background-color: rgba(213, 213, 213, 0.8);
   border-radius: rem(4px);
-  margin-left: rem(90px);
   margin-top: rem(-91px);
   position: absolute;
   left: rem(99999px);
@@ -24,15 +23,15 @@
   margin-bottom: rem(22px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 
 .product__menu-svg {
   width: rem(32px);
   height: rem(32px);
+  margin-right: rem(15px);
 }
 
-.dt {
-  text-align: right;
+.product__menu-title {
+  flex: 1;
 }
