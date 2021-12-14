@@ -1516,39 +1516,40 @@ table {
   border-radius: 0.9375rem;
 }
 
-.hamburger--active {
-  position: absolute;
-  display: block;
-  top: 2.625rem;
-  right: 2.625rem;
-}
+@media screen and (max-width: 768px) {
+  .hamburger--active {
+    position: absolute;
+    display: block;
+    top: 2.625rem;
+    right: 2.625rem;
+  }
 
-.hamburger--active ::before {
-  position: absolute;
-  display: block;
-  content: "";
-  right: 1.25rem;
-  width: 0.1875rem;
-  height: 1.25rem;
-  background-color: #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  z-index: 10000;
-}
+  .hamburger--active ::before {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 1.25rem;
+    width: 0.1875rem;
+    height: 1.25rem;
+    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    z-index: 10000;
+  }
 
-.hamburger--active::after {
-  position: absolute;
-  display: block;
-  content: "";
-  right: 1.25rem;
-  width: 0.1875rem;
-  height: 1.25rem;
-  background-color: #fff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: 10000;
+  .hamburger--active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 1.25rem;
+    width: 0.1875rem;
+    height: 1.25rem;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    z-index: 10000;
+  }
 }
-
 .footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
