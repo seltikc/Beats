@@ -1,0 +1,55 @@
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  // align-items: flex-start;
+}
+
+.products .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 24px;
+  height: 40px;
+}
+
+.products .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../../image/product/left.svg") 0 0 /100% no-repeat;
+}
+
+.products .slick-arrow.slick-next {
+  right: 0;
+  background: url("../../image/product/right.svg") 0 0 /100% no-repeat;
+}
+
+.products .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.products .slick-dots li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.products .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: $color-text;
+  border-radius: 50%;
+}
+
+.products .slick-dots li.slick-active button {
+  background-color: $color-red;
+
+
+}

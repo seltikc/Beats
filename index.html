@@ -20,13 +20,13 @@
             </div>
               <nav class="menu overlay">
                 <ul class="menu__list modal__menu">
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">О нас</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Наушники</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Команда</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Цвета</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Отзывы</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Как мы работаем</a></li>
-                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="">Контакты</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">О нас</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Наушники</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Команда</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Цвета</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Отзывы</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Как мы работаем</a></li>
+                  <li class="menu__item modal__menu-item"><a class="menu__link modal__menu-link" href="#">Контакты</a></li>
                 </ul>
               </nav>
             <address class="address">
@@ -157,7 +157,7 @@
       </section>
 
       <section class="section products-section">
-        <div class="container">
+        <div class="container container-slider">
           <div class="products-slider">
             <a class="products-slider__arrows products-slider__arrows--left" href="#">
             </a>
@@ -235,6 +235,97 @@
                     <div class="product__content">
                       <div class="product__desc">
                         <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                      </div>
+                      <ul class="product__specifications">
+                        <li class="product__charging">
+                          <span>Зарядка</span>
+                          <div class="product__clock">2 часа</div>
+                        </li>
+                        <li class="product__weight">
+                          <span>Вес</span>
+                          <div class="product__clock">215 грамм</div>
+                        </li>
+                      </ul>
+                      <div class="product__order">
+                        <div class="product__price">14 990 ₽</div>
+                        <a class="btn btn-theme--red btn-theme--price" href="#">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item product">
+                <div class="product__container">
+                  <div class="product__wrap-img">
+                    <picture>
+                      <source
+                      srcset="image/product/solo-red-m.png"
+                      media="(max-width: 480px)"
+                      alt="<= 480"
+                      type="image/png"
+                      >
+                      <source
+                      srcset="image/product/solo-red-t.png"
+                      media="(max-width: 768px)"
+                      alt="<= 768"
+                      type="image/png"
+                      >
+                      <source
+                      srcset="image/product/solo-red.png"
+                      media="(min-width: 769px)"
+                      alt=">= 768"
+                      type="image/png"
+                      >
+                      <img class="product__image" src="image/product/solo-red.png" alt="solo-red">
+                    </picture>
+                  </div>
+                  <div class="product__inner">
+                    <div class="product__structure">
+                      <div class="product__gear-bg">
+                        <svg class="product__gear">
+                          <use xlink:href="image/sprite.svg#gear"></use>
+                        </svg>
+                      </div>
+                      <div class="product__dropdown">
+                        <ul class="product__menu">
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#bluetooth"></use>
+                            </svg>
+                          <div class="product__menu-title">Bluetooth</div><span>4.0</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#range"></use>
+                            </svg>
+                              <dyv class="product__menu-title">Дальность</dyv><span>10 м</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#charge"></use>
+                            </svg>
+                          <div class="product__menu-title">Зарядка</div><span>2 ч</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#warranty"></use>
+                            </svg>
+                          <div class="product__menu-title">Вес</div><span>215гр</span>
+                          </li>
+                          <li class="product__menu-item">
+                            <svg class="product__menu-svg">
+                              <use xlink:href="image/sprite.svg#weight"></use>
+                            </svg>
+                            <div class="product__menu-title">Гарантия</div><span>1 год</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="product__subtitle">beats solo 3. цвет «атласное серебро»</h2>
+                    <div class="product__content">
+                      <div class="product__desc">
+                        <p>Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</p>
                       </div>
                       <ul class="product__specifications">
                         <li class="product__charging">
@@ -458,6 +549,11 @@
     </ul>
   </nav>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/modal.js"></script>
+    
+    
 </body>
 </html>
