@@ -9,12 +9,20 @@
 
   @include tablets {
     display: inline-flex;
-  }
-}
+    }
 
 .hamburger__plank {
   display: block;
   background: $color-title;
   height: rem(4px);
   border-radius: rem(15px);
+}
+
+}
+
+.hamburger:hover.overlay-open {
+  @include tablets {
+    display: block;
+  }
+  
 }

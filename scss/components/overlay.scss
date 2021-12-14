@@ -1,11 +1,6 @@
 @include tablets {
-
+  
   .overlay {
-    display: none;
-  }
-
-  .overlay__open {
-    display: block;
     position: fixed;
     top: 0;
     right: 0;
@@ -17,5 +12,10 @@
     align-items: center;
     z-index: 1000;
   }
+
+  .overlay-open {
+    display: none;
+  }
 }
+
 

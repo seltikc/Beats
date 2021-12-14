@@ -1509,12 +1509,17 @@ table {
     display: inline-flex;
   }
 }
-
-.hamburger__plank {
+.hamburger .hamburger__plank {
   display: block;
   background: #292929;
   height: 0.25rem;
   border-radius: 0.9375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger:hover.overlay-open {
+    display: block;
+  }
 }
 
 .footer {
@@ -1870,11 +1875,6 @@ table {
 
 @media screen and (max-width: 768px) {
   .overlay {
-    display: none;
-  }
-
-  .overlay__open {
-    display: block;
     position: fixed;
     top: 0;
     right: 0;
@@ -1891,6 +1891,10 @@ table {
         -ms-flex-align: center;
             align-items: center;
     z-index: 1000;
+  }
+
+  .overlay-open {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
