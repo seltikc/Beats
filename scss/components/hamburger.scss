@@ -20,9 +20,34 @@
 
 }
 
-.hamburger:hover.overlay-open {
-  @include tablets {
+.hamburger--active {
+    position: absolute;
     display: block;
-  }
-  
+    top: rem(42px);
+    right: rem(42px);
 }
+
+.hamburger--active ::before {
+      position: absolute;
+      display: block;
+      content: "";
+      right: rem(20px);
+      width: rem(3px);
+      height: rem(20px);
+      background-color: #fff;
+      transform: rotate(-45deg);
+      z-index: 10000;
+    }
+
+    .hamburger--active::after {
+      position: absolute;
+      display: block;
+      content: "";
+      right: rem(20px);
+      width: rem(3px);
+      height: rem(20px);;
+      background-color: #fff;
+      transform: rotate(45deg);
+      z-index: 10000;
+  }  
+

@@ -2,35 +2,6 @@
 
   .modal {
 
-    &__close {
-      position: absolute;
-      display: block;
-      top: rem(42px);
-      right: rem(42px);
-  
-      &::before {
-        position: absolute;
-        display: block;
-        content: "";
-        right: rem(20px);
-        width: rem(3px);
-        height: rem(20px);
-        background-color: #fff;
-        transform: rotate(-45deg);
-      }
-  
-      &::after {
-        position: absolute;
-        display: block;
-        content: "";
-        right: rem(20px);
-        width: rem(3px);
-        height: rem(20px);;
-        background-color: #fff;
-        transform: rotate(45deg);
-      }
-    }
-  
     &__menu {
       display: flex;
       flex-direction: column;

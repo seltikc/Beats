@@ -1516,10 +1516,37 @@ table {
   border-radius: 0.9375rem;
 }
 
-@media screen and (max-width: 768px) {
-  .hamburger:hover.overlay-open {
-    display: block;
-  }
+.hamburger--active {
+  position: absolute;
+  display: block;
+  top: 2.625rem;
+  right: 2.625rem;
+}
+
+.hamburger--active ::before {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 1.25rem;
+  width: 0.1875rem;
+  height: 1.25rem;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 10000;
+}
+
+.hamburger--active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 1.25rem;
+  width: 0.1875rem;
+  height: 1.25rem;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 10000;
 }
 
 .footer {
@@ -1884,6 +1911,7 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1893,39 +1921,20 @@ table {
     z-index: 1000;
   }
 
-  .overlay-open {
-    display: none;
+  .overlay--active {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .modal__close {
-    position: absolute;
-    display: block;
-    top: 2.625rem;
-    right: 2.625rem;
-  }
-  .modal__close::before {
-    position: absolute;
-    display: block;
-    content: "";
-    right: 1.25rem;
-    width: 0.1875rem;
-    height: 1.25rem;
-    background-color: #fff;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  .modal__close::after {
-    position: absolute;
-    display: block;
-    content: "";
-    right: 1.25rem;
-    width: 0.1875rem;
-    height: 1.25rem;
-    background-color: #fff;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
   .modal__menu {
     display: -webkit-box;
     display: -ms-flexbox;
