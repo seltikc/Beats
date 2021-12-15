@@ -4,16 +4,52 @@
 
 .product__container {
   display: flex;
-  justify-content: space-between;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .product__wrap-img {
-  margin-right: rem(70px);
+  margin-right: rem(50px);
+  position: relative;
+  left: rem(30px);
+  top: rem(100px);
+
+  @include tablets {
+    width: 43%;
+    left: 1.1625rem;
+    top: 1.10625rem;
+    margin-right: 0;
+    margin-bottom: 4.4625rem;
+  }
+  
+  @include phones {
+    width: 43%;
+    left: -7.6375rem;
+    top: 3.60625rem;
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
 }
 
 .product__inner {
   max-width: rem(419px);
-  padding-top: rem(50px);
+  padding-top: rem(72px);
+  padding-left: rem(38px);
+
+  @include tablets {
+    max-width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 .product__structure {
@@ -21,6 +57,10 @@
   width: rem(91px);
   height: rem(91px);
   margin-bottom: rem(25px);
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .product__structure:hover .product__dropdown {
@@ -54,14 +94,32 @@
   font-size: rem(36px);
   font-weight: 700;
   line-height: rem(41px);
+
+  @include tablets {
+    font-size: rem(28px);
+    letter-spacing: rem(1.2px);
+    margin-bottom: 13px;
+    margin-left: 35px;
+  }
 }
 
 .product__content {
   width: rem(368px);
+
+  @include tablets {
+    width: 694px;
+  }
 }
 
 .product__desc {
-  margin-bottom: rem(24px);
+  margin-bottom: rem(35px);
+
+  @include tablets {
+    padding: 0px 24px 0 60px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 .product__specifications {
@@ -69,11 +127,25 @@
   justify-content: flex-start;
   gap: rem(86px);
   margin-bottom: rem(24px);
+
+  @include tablets {
+    margin-left: 240px;
+  }
+}
+
+.product__charging {
+  
+  @include tablets {
+    margin-right: 8px;
+  }
 }
 
 .product__charging span, .product__weight span{
   display: inline-block;
-  margin-bottom: 10px;
+
+  @include tablets {
+    margin-bottom: 4px;
+  }
 }
 
 .product__clock {
@@ -85,10 +157,19 @@
 .product__order {
   display: flex;
   align-items: center;
-  gap: rem(13px);
+  gap: rem(20px);
+
+  @include tablets {
+    margin-left: rem(198px);
+    gap: 2.65rem;
+  }
 }
 
 .product__price {
   color: #000;
   font-size: rem(36px);
+
+  @include tablets {
+    font-size: 2.65rem;
+  }
 }

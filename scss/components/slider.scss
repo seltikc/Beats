@@ -9,7 +9,7 @@
 
 .products .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 53%;
   z-index: 10;
   font-size: 0;
   width: 24px;
@@ -17,13 +17,23 @@
 }
 
 .products .slick-arrow.slick-prev {
-  left: 0;
+  left: rem(-24px);
   background: url("../image/product/left.svg") 0 0 /100% no-repeat;
+
+  @include tablets {
+    left: rem(136px);
+    top: rem(183px);
+  }
 }
 
 .products .slick-arrow.slick-next {
-  right: 0;
+  right: rem(-24px);
   background: url("../image/product/right.svg") 0 0 /100% no-repeat;
+
+  @include tablets {
+    right: rem(145px);
+    top: rem(183px);
+  }
 }
 
 .products .slick-dots {
@@ -33,6 +43,10 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .products .slick-dots li {
@@ -46,6 +60,10 @@
   height: 10px;
   background: $color-text;
   border-radius: 50%;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .products .slick-dots li.slick-active button {

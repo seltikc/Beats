@@ -1,15 +1,14 @@
+
 .products {
   display: flex;
   position: relative;
 }
 
-.container-slider {
-  overflow: hidden;
-}
 
 .products__item {
   display: flex;
   flex-shrink: 0;
+
 }
 
 .products-slider {

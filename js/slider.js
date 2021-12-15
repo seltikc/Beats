@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(".products").slick({
     arrows: true,
-    dots: true,
+    dots: false,
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll:1,
