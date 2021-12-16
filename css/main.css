@@ -771,6 +771,12 @@ table {
   color: #E01F3D;
 }
 
+@media screen and (max-width: 480px) {
+  .btn-theme--price {
+    font-size: 16px;
+  }
+}
+
 .section {
   height: 100vh;
   min-height: 40.625rem;
@@ -800,6 +806,9 @@ table {
   margin-bottom: 3.75rem;
   text-align: center;
   color: #292929;
+}
+.section__title__title-team {
+  margin-bottom: 3.35rem;
 }
 @media screen and (max-width: 768px) {
   .section__title {
@@ -1745,7 +1754,7 @@ table {
   margin-right: 3.125rem;
   position: relative;
   left: 1.875rem;
-  top: 6.25rem;
+  top: 1.875rem;
 }
 @media screen and (max-width: 768px) {
   .product__wrap-img {
@@ -1758,17 +1767,16 @@ table {
 }
 @media screen and (max-width: 480px) {
   .product__wrap-img {
-    width: 43%;
-    left: -7.6375rem;
-    top: 3.60625rem;
+    width: 70%;
+    left: 0;
+    top: 0;
     margin-right: 0;
-    margin-bottom: 120px;
+    margin-bottom: 1.25rem;
   }
 }
 
 .product__inner {
   max-width: 26.1875rem;
-  padding-top: 4.5rem;
   padding-left: 2.375rem;
 }
 @media screen and (max-width: 768px) {
@@ -1844,13 +1852,21 @@ table {
     margin-left: 35px;
   }
 }
+@media screen and (max-width: 480px) {
+  .product__subtitle {
+    text-align: center;
+    margin-left: 0.25rem;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+  }
+}
 
 .product__content {
   width: 23rem;
 }
 @media screen and (max-width: 768px) {
   .product__content {
-    width: 694px;
+    width: 100%;
   }
 }
 
@@ -1863,6 +1879,13 @@ table {
     letter-spacing: 0.5px;
     text-align: center;
     line-height: 1.2;
+    margin-bottom: 1.9875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__desc {
+    padding: 0 0.875rem;
+    padding: 0 1.375rem;
   }
 }
 
@@ -1878,7 +1901,15 @@ table {
 }
 @media screen and (max-width: 768px) {
   .product__specifications {
-    margin-left: 240px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1.0625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__specifications {
+    margin-left: -0.7375rem;
   }
 }
 
@@ -1890,11 +1921,6 @@ table {
 
 .product__charging span, .product__weight span {
   display: inline-block;
-}
-@media screen and (max-width: 768px) {
-  .product__charging span, .product__weight span {
-    margin-bottom: 4px;
-  }
 }
 
 .product__clock {
@@ -1914,8 +1940,17 @@ table {
 }
 @media screen and (max-width: 768px) {
   .product__order {
-    margin-left: 12.375rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 2.3125rem;
     gap: 2.65rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__order {
+    margin-left: 0.0125rem;
+    gap: 1.85rem;
   }
 }
 
@@ -1926,6 +1961,11 @@ table {
 @media screen and (max-width: 768px) {
   .product__price {
     font-size: 2.65rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__price {
+    font-size: 2rem;
   }
 }
 
@@ -2077,22 +2117,36 @@ table {
 .products .slick-arrow.slick-prev {
   left: -1.5rem;
   background: url("../image/product/left.svg") 0 0/100% no-repeat;
+  top: 14.6875rem;
 }
 @media screen and (max-width: 768px) {
   .products .slick-arrow.slick-prev {
-    left: 8.5rem;
+    left: 8.875rem;
     top: 11.4375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products .slick-arrow.slick-prev {
+    left: -0.175rem;
+    top: 8.8375rem;
   }
 }
 
 .products .slick-arrow.slick-next {
   right: -1.5rem;
   background: url("../image/product/right.svg") 0 0/100% no-repeat;
+  top: 14.6875rem;
 }
 @media screen and (max-width: 768px) {
   .products .slick-arrow.slick-next {
-    right: 9.0625rem;
+    right: 7.0625rem;
     top: 11.4375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products .slick-arrow.slick-next {
+    right: -0.3375rem;
+    top: 8.8375rem;
   }
 }
 
@@ -2136,4 +2190,60 @@ table {
 
 .products .slick-dots li.slick-active button {
   background-color: #E01F3D;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team__item {
+  text-align: center;
+}
+.team__member {
+  max-width: 13.75rem;
+  min-height: 18.125rem;
+  margin-bottom: 1.5625rem;
+}
+.team__title {
+  position: relative;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.6875rem;
+  letter-spacing: 0.6px;
+  padding: 0;
+}
+.team__title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: red;
+  border-bottom-width: 0.5rem;
+  border-top-width: 0.5rem;
+  width: 0;
+  height: 0;
+  left: auto;
+  top: 8px;
+}
+.team__content {
+  max-width: 220px;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3 linear;
+  transition: height 0.3 linear;
+}
+.team__name {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.6875rem;
+}
+.team__spec {
+  color: #292929;
+  margin-bottom: 0.25rem;
 }

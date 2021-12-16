@@ -16,7 +16,7 @@
   margin-right: rem(50px);
   position: relative;
   left: rem(30px);
-  top: rem(100px);
+  top: rem(30px);
 
   @include tablets {
     width: 43%;
@@ -27,17 +27,16 @@
   }
   
   @include phones {
-    width: 43%;
-    left: -7.6375rem;
-    top: 3.60625rem;
+    width: 70%;
+    left: 0;
+    top: 0;
     margin-right: 0;
-    margin-bottom: 120px;
+    margin-bottom: rem(20px);
   }
 }
 
 .product__inner {
   max-width: rem(419px);
-  padding-top: rem(72px);
   padding-left: rem(38px);
 
   @include tablets {
@@ -94,6 +93,7 @@
   font-size: rem(36px);
   font-weight: 700;
   line-height: rem(41px);
+  
 
   @include tablets {
     font-size: rem(28px);
@@ -101,13 +101,20 @@
     margin-bottom: 13px;
     margin-left: 35px;
   }
+
+  @include phones {
+    text-align: center;
+    margin-left: rem(4px);
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+  }
 }
 
 .product__content {
   width: rem(368px);
 
   @include tablets {
-    width: 694px;
+    width: 100%;
   }
 }
 
@@ -119,6 +126,12 @@
     letter-spacing: 0.5px;
     text-align: center;
     line-height: 1.2;
+    margin-bottom: 1.9875rem;
+  }
+
+  @include phones {
+    padding: 0 rem(14px);
+    padding: 0 1.375rem;
   }
 }
 
@@ -129,7 +142,12 @@
   margin-bottom: rem(24px);
 
   @include tablets {
-    margin-left: 240px;
+    justify-content: center;
+    margin-left: rem(17px);
+  }
+
+  @include phones {
+    margin-left: -0.7375rem;
   }
 }
 
@@ -142,10 +160,6 @@
 
 .product__charging span, .product__weight span{
   display: inline-block;
-
-  @include tablets {
-    margin-bottom: 4px;
-  }
 }
 
 .product__clock {
@@ -160,8 +174,14 @@
   gap: rem(20px);
 
   @include tablets {
-    margin-left: rem(198px);
+    justify-content: center;
+    margin-left: rem(37px);
     gap: 2.65rem;
+  }
+
+  @include phones{
+    margin-left: 0.0125rem;
+    gap: 1.85rem;
   }
 }
 
@@ -171,5 +191,9 @@
 
   @include tablets {
     font-size: 2.65rem;
+  }
+
+  @include phones {
+    font-size: rem(32px);
   }
 }

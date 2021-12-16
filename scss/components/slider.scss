@@ -19,20 +19,32 @@
 .products .slick-arrow.slick-prev {
   left: rem(-24px);
   background: url("../image/product/left.svg") 0 0 /100% no-repeat;
+  top: rem(235px);
 
   @include tablets {
-    left: rem(136px);
+    left: rem(142px);
     top: rem(183px);
+  }
+
+  @include phones {
+    left: -0.175rem;
+    top: 8.8375rem;
   }
 }
 
 .products .slick-arrow.slick-next {
   right: rem(-24px);
   background: url("../image/product/right.svg") 0 0 /100% no-repeat;
+  top: rem(235px);
 
   @include tablets {
-    right: rem(145px);
+    right: rem(113px);
     top: rem(183px);
+  }
+
+  @include phones {
+    right: -0.3375rem;
+    top: 8.8375rem;
   }
 }
 

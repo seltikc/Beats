@@ -1,0 +1,60 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+
+    &__item {
+      text-align: center;
+    }
+
+    &__member {
+      max-width: rem(220px);
+      min-height: rem(290px);
+      margin-bottom: rem(25px);
+    }
+
+    &__title {
+      position: relative;
+      font-size: rem(18px);
+      font-weight: 700;
+      margin-bottom: rem(11px);
+      letter-spacing: 0.6px;
+      padding: 0;
+    }
+
+    &__title::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      border: 5px solid transparent;
+      border-top-color: red;
+      border-bottom-width: rem(8px);
+      border-top-width: rem(8px);
+      width: 0;
+      height: 0;
+      left: auto;
+      top: 8px;
+
+    }
+
+    &__content {
+      max-width: 220px;
+      text-align: center;
+      overflow: hidden;
+      height: 0;
+      transition: height .3 linear;
+    }
+
+
+    &__name {
+      display: inline-block;
+      font-size: rem(18px);
+      font-weight: 700;
+      margin-bottom: rem(11px);
+    }
+
+    &__spec {
+      color: $color-title;
+      margin-bottom: rem(4px);
+    }
+}
