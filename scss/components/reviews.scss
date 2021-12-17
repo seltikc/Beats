@@ -24,7 +24,9 @@
   }
 }
 
-.reviews__display-inner {
+.reviews__display-list {
+  position: relative;
+  min-height: rem(300px);
   display: flex;
 
   @include tablets {
@@ -33,6 +35,22 @@
     align-items: center;
     padding-top: rem(26px);
   }
+}
+
+.reviews__displat-item {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition:  .3s;
+  opacity: 0;
+}
+
+.reviews__displat-item--active {
+  position: static;
+  opacity: 1;
 }
 
 .reviews__avatar {

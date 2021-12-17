@@ -21,6 +21,7 @@ $(".team__title").click(e => {
   const thise = $(e.currentTarget);
   const wrapper = thise.closest(".team");
   const elementWrapper = thise.closest(".team__item")
+  
 
   if (elementWrapper.hasClass("active") ) {
     closeItem(wrapper);

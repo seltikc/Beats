@@ -415,35 +415,68 @@
           <h2 class="section__title section__title--reviews">Отзывы</h2>
           <div class="reviews">
             <div class="reviews__display">
-              <div class="reviews__display-inner">
-                <div class="reviews__avatar">
-                  <img class="reviews__avatar-img" src="image/reviews/natli.png" alt="">
-                </div>
-                <article class="reviews__content">
-                  <h3 class="reviews__title">Отличный звук</h3>
-                  <div class="reviews__text">
-                    <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно.</p>
+              <ul class="reviews__display-list">
+
+                <li class="reviews__displat-item reviews__displat-item--active" data-linked-with="one">
+                  <div class="reviews__avatar">
+                    <img class="reviews__avatar-img" src="image/reviews/natli.png" alt="">
                   </div>
-                  <div class="reviews__author">
-                    Билли Айлиш
+                  <article class="reviews__content">
+                    <h3 class="reviews__title">Отличный звук</h3>
+                    <div class="reviews__text">
+                      <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно.</p>
+                    </div>
+                    <div class="reviews__author">
+                      Билли Айлиш
+                    </div>
+                  </article>
+                </li>
+
+                <li class="reviews__displat-item" data-linked-with="two">
+                  <div class="reviews__avatar">
+                    <img class="reviews__avatar-img" src="image/reviews/mike.png" alt="">
                   </div>
-                </article>
-              </div>
+                  <article class="reviews__content">
+                    <h3 class="reviews__title">Крутой дизайн</h3>
+                    <div class="reviews__text">
+                      <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</p>
+                    </div>
+                    <div class="reviews__author">
+                      Вадим Грачев
+                    </div>
+                  </article>
+                </li>
+
+                <li class="reviews__displat-item" data-linked-with="three">
+                  <div class="reviews__avatar">
+                    <img class="reviews__avatar-img" src="image/reviews/maria.png" alt="">
+                  </div>
+                  <article class="reviews__content">
+                    <h3 class="reviews__title">На долго хватает заряда</h3>
+                    <div class="reviews__text">
+                      <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                    </div>
+                    <div class="reviews__author">
+                      Мария Орлова
+                    </div>
+                  </article>
+                </li>
+              </ul>
             </div>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a class="interactive-avatar-link" href="#">
+                <a class="interactive-avatar-link" href="#" data-open="one">
                   <img class="interactive-avatar-img" src="image/reviews/natli.png" alt="natali">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a class="interactive-avatar-link" href="#">
-                  <img class="interactive-avatar-img" src="image/reviews/mike.png" alt="natali">
+                <a class="interactive-avatar-link" href="#"  data-open="two">
+                  <img class="interactive-avatar-img" src="image/reviews/mike.png" alt="mike">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a class="interactive-avatar-link" href="#">
-                  <img class="interactive-avatar-img" src="image/reviews/maria.png" alt="natali">
+                <a class="interactive-avatar-link" href="#"  data-open="three">
+                  <img class="interactive-avatar-img" src="image/reviews/maria.png" alt="maria">
                 </a>
               </li>
             </ul>
@@ -609,11 +642,26 @@
     </ul>
   </nav>
 
+  <div  class="modal modal">
+    <div class="modal__wrap">
+      <div class="madal__content">
+        <span class="modal__message">Cообщение отправлено</span> 
+        <div class="madal__btn-wrap">
+          <a class="btn btn-theme--red app-submit-btn" href="#">закрыть</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/reviews.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/form-modal.js"></script>
+
     
     
 </body>
