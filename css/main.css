@@ -1425,6 +1425,10 @@ table {
   }
 }
 
+.error {
+  color: red;
+}
+
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
