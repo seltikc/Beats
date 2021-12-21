@@ -1,27 +1,45 @@
 const myForm = document.querySelector("#myForm");
 const sendButton = document.querySelector("#sendButton");
+const modalText = document.querySelector(".modal_messege")
+const modslCloseBtn = document.querySelector(".app-submit-btn")
+
+modslCloseBtn.addEventListener("click", e => {
+  e.preventDefault();
+  $.fancybox.close();
+  document.body.classList.remove("locked");
+})
 
 sendButton.addEventListener("click", function(event) {
   event.preventDefault();
 
   if (validateForm(myForm)) {
-    const data = {
-      names: myForm.elements.names.value,
-      phone: myForm.elements.phone.value,
-      street: myForm.elements.street.value,
-      home: myForm.elements.home.value,
-      frame: myForm.elements.frame.value,
-      apartment: myForm.elements.apartment.value,
-      floor: myForm.elements.floor.value,
-    };
-    
+    const formData = new FormData();
+    formData.append("name", myForm.elements.name.value);
+    formData.append("phone", myForm.elements.phone.value);
+    formData.append("street", myForm.elements.street.value);
+    formData.append("home", myForm.elements.home.value);
+    formData.append("frame", myForm.elements.frame.value);
+    formData.append("apartment", myForm.elements.apartment.value);
+    formData.append("floor", myForm.elements.floor.value);
+    formData.append("comment", "текст комментария");
+    formData.append("to", "example@mail.ru");
+
     const xhr = new XMLHttpRequest();
     xhr.responseType = "json";
     xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
-    xhr.send(JSON.stringify(data));
-    xhr.addEventListener("load", () => { //Я  так понимаю от сюда можно вызвать мод. окно. Как мне это сделать если есть уже файл на Jqwery
+    xhr.setRequestHeader("X-Requested-Width", "XMLHttpRequest");
+    xhr.send(formData)
+    xhr.addEventListener("load", () => { 
+      $.fancybox.open({
+        src: ".modal-form",
+        type: "inline"
+        });
+        document.body.classList.add("locked");
+
       if (xhr.response.status) {
-        console.log("Все ок");
+        modalText.innerHTML = xhr.response.message;
+      }else {
+        modalText.innerHTML = "Произошла ошибка";
       }
     })
   }
@@ -31,7 +49,7 @@ function validateForm(form) {
 
   let valid = true;
 
-  if (!validateField(form.elements.names)) {
+  if (!validateField(form.elements.name)) {
     valid = false;
   }
 
@@ -58,9 +76,11 @@ function validateForm(form) {
   if (!validateField(form.elements.floor)) {
     valid = false;
   }
+  
 
   return valid;
 }
+
 
 function validateField(field) {
 

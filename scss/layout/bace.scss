@@ -25,6 +25,9 @@ body {
   line-height: 1.1;
   position: relative;
   color: #666666;
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

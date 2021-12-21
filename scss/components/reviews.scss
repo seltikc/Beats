@@ -28,13 +28,6 @@
   position: relative;
   min-height: rem(300px);
   display: flex;
-
-  @include tablets {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-top: rem(26px);
-  }
 }
 
 .reviews__displat-item {
@@ -44,8 +37,15 @@
   right: 0;
   left: 0;
   bottom: 0;
-  transition:  .3s;
+  transition: .3s linear;
   opacity: 0;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: rem(26px);
+  }
 }
 
 .reviews__displat-item--active {
@@ -125,12 +125,13 @@
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: rem(-6px);
-  left: rem(-4px);
+  bottom: 2.125rem;
+  left: -0.15rem;
 
   @include tablets {
     position: relative;
-    top: rem(23px);    
+    top: rem(23px); 
+    left: rem(3px);   
   }
 
   @include phones {

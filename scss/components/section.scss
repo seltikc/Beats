@@ -29,7 +29,6 @@
   @include tablets {
     letter-spacing: 2.1px;
   }
-  
 
   &--reviews {
     margin-bottom: 1.875rem;
@@ -55,6 +54,17 @@
       margin-bottom: 2.7375rem;
       letter-spacing: rem(0.5px);
     }
+  }
+}
+
+.section__title-bottom {
+  @include tablets {
+    margin-bottom: rem(36px);
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
   }
 }
 
