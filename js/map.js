@@ -8,16 +8,16 @@ myMap = new ymaps.Map("map", {
 });
 
 const coords = [
-[56.908728, 60.617581]
-[56.834398, 60.625313]
-[56.861047, 60.657507]
+[56.908728, 60.617581],
+[56.834398, 60.625313],
+[56.861047, 60.657507],
 [56.872368, 60.554258]
 ];
 
 const myCollection = new ymaps.GeoObjectCollection({}, {
   draggable: false,
   iconLayout: "default#image",
-  iconImageHref: "/image/marker.svg",
+  iconImageHref: "image/marker.svg",
   iconImageSize: [46, 57],
   iconImageOffset: [-35, -52]
 })

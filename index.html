@@ -423,6 +423,48 @@
         </div>
       </section>
 
+      <section class="section video">
+        <div class="container video__container">
+          <h2 class="section__title section-video-title">Как мы работаем</h2>
+          <div class="video__wrapper">
+            <div class="video__box">
+              <video src="video/beats.mp4" id="player" class="video__player" poster="image/previe.png">
+                          <source src="video/beats.mp4" type="video/mp4">
+                      </video>
+              <button class="video__player-img">
+                          <img src="image/play.svg" alt="" class="play video__btn-img">
+                      </button>
+            </div>
+            <div class="video__toolbar">
+              <div class="duration">
+                <div class="duration__btn-wrap">
+                  <button class="play duration__img"></button>
+                </div>
+                <div class="duration__length-wrap">
+      
+                  <!-- ползунок дивом -->
+                  <!-- <div class="div-duration" id="durationControl">
+                                  <div class="div-duration__line" id="playbackLine">
+                                      <button class="div-duration__thumb"></button>
+                                  </div>
+                              </div> -->
+      
+                  <input type="range" class="duration__length" id="durationLevel">
+                </div>
+              </div>
+              <div class="sound">
+                <button class="sound__btn">
+                              <img src="image/sound.svg" class="sound__mic" id="mic" alt="">
+                          </button>
+                <div class="sound__volume">
+                  <input type="range" class="duration__length duration__length--other" id="micLevel">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section">
         <div class="container">
           <h2 class="section__title section__title--reviews">Отзывы</h2>
@@ -683,6 +725,7 @@
     <script src="js/form-valid.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/video.js"></script>
     
 
 </body>
