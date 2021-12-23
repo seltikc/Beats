@@ -44,7 +44,7 @@ body {
 }
 
 .container-triahgle::before {
-  content: url("../../image/triangle.png");
+  content: url("/../image/triangle.svg");
   position: absolute;
   width: rem(34px);
   height: rem(34px);

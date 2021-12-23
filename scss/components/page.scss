@@ -29,8 +29,8 @@
   &::before {
     content: url("../image/decor/rectangle.png");
     position: absolute;
-    bottom: rem(-38px);
-    right: rem(48px);
+    bottom: rem(-22px);
+    right: rem(47px);
 
     @include tablets {
       bottom: rem(0px);

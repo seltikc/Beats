@@ -438,7 +438,7 @@ body.locked {
 }
 
 .container-triahgle::before {
-  content: url("../../image/triangle.png");
+  content: url("/../image/triangle.svg");
   position: absolute;
   width: 2.125rem;
   height: 2.125rem;
@@ -528,8 +528,8 @@ table {
 .page__container::before {
   content: url("../image/decor/rectangle.png");
   position: absolute;
-  bottom: -2.375rem;
-  right: 3rem;
+  bottom: -1.375rem;
+  right: 2.9375rem;
 }
 @media screen and (max-width: 768px) {
   .page__container::before {
@@ -2010,6 +2010,16 @@ table {
   }
 }
 
+.container-slider::before {
+  content: url("../image/square.svg");
+  position: absolute;
+  width: 2.125rem;
+  height: 2.125rem;
+  bottom: -1.425rem;
+  right: 5.875rem;
+  z-index: 10;
+}
+
 .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2435,6 +2445,17 @@ element.style {
 .section-video-title {
   margin-bottom: 2.8125rem;
 }
+@media screen and (max-width: 768px) {
+  .section-video-title {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-video-title {
+    font-size: 32px;
+  }
+}
 
 .video__container {
   display: -webkit-box;
@@ -2450,6 +2471,16 @@ element.style {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.video__container::before {
+  content: url("/../image/elipse.svg");
+  position: absolute;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  top: -1.0625rem;
+  left: 6.5875rem;
+  z-index: 10;
 }
 
 .video__wrapper {
@@ -2469,14 +2500,14 @@ element.style {
 }
 @media screen and (max-width: 768px) {
   .video__wrapper {
-    width: 37.125rem;
-    height: 21.9375rem;
+    width: 39.575rem;
+    height: 22.5375rem;
   }
 }
 @media screen and (max-width: 480px) {
   .video__wrapper {
-    width: 80%;
-    height: 14.5625rem;
+    width: 86.7%;
+    height: 14.0625rem;
   }
 }
 
@@ -2497,10 +2528,30 @@ element.style {
   background: transparent;
   border: none;
 }
+@media screen and (max-width: 768px) {
+  .video__player-img {
+    left: 51.3%;
+    top: 44.3%;
+    width: 99.2px;
+  }
+}
 
 .video__btn-img {
   max-width: 100%;
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .video__btn-img {
+    max-width: 100%;
+    width: 70px;
+    height: 103px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video__btn-img {
+    width: 79px;
+    height: 65px;
+  }
 }
 
 .video__player-img--active {
@@ -2525,6 +2576,16 @@ element.style {
       flex-shrink: 0;
   bottom: 0;
   position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .video__toolbar {
+    bottom: -16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video__toolbar {
+    height: 20px;
+  }
 }
 
 .duration__btn-wrap {
@@ -2551,6 +2612,11 @@ element.style {
           flex: 1;
   padding-left: 1.03125rem;
 }
+@media screen and (max-width: 480px) {
+  .duration {
+    padding-left: 0.73125rem;
+  }
+}
 
 .duration__img {
   margin-right: 0.25rem;
@@ -2571,6 +2637,18 @@ element.style {
   border-top: 0;
   border-bottom: 0;
   padding: 1px;
+}
+@media screen and (max-width: 480px) {
+  .duration__img.active {
+    border: 3px solid #fff;
+    height: 7px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .duration__img {
+    border: 4px solid transparent;
+    border-left-color: #fff;
+  }
 }
 
 .duration__length-wrap {
@@ -2655,11 +2733,26 @@ element.style {
 .sound.active:before {
   opacity: 1;
 }
+@media screen and (max-width: 480px) {
+  .sound {
+    margin: 0px;
+  }
+}
 
 .sound__btn {
   border: 0;
   background: transparent;
   padding-right: 23px;
+}
+@media screen and (max-width: 768px) {
+  .sound__btn {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sound__btn {
+    padding-right: 0;
+  }
 }
 
 .sound__mic {
@@ -2667,8 +2760,19 @@ element.style {
   height: 16px;
   width: 13px;
 }
+@media screen and (max-width: 480px) {
+  .sound__mic {
+    height: 11px;
+    width: 18px;
+  }
+}
 
 .sound__volume {
   margin-left: 10px;
   margin-top: -5px;
+}
+@media screen and (max-width: 768px) {
+  .sound__volume {
+    margin-left: 0;
+  }
 }
