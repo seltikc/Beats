@@ -427,8 +427,17 @@ body.locked {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -2495,7 +2504,6 @@ element.style {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 41.375rem;
-  height: 24.4375rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -2574,18 +2582,6 @@ element.style {
   z-index: 10;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  bottom: 0;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .video__toolbar {
-    bottom: -16px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .video__toolbar {
-    height: 20px;
-  }
 }
 
 .duration__btn-wrap {
@@ -2780,9 +2776,9 @@ element.style {
 .container-menu-section {
   background: url("../image/gerls-bg.png") no-repeat center center;
   background-size: cover;
-  height: 69%;
-  max-width: 1100px;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .product-title {
@@ -2856,6 +2852,8 @@ element.style {
   position: relative;
   overflow: hidden;
   width: 0;
+  -webkit-transition: width 0.5s ease-in;
+  transition: width 0.5s ease-in;
 }
 
 .product-menu__container {
@@ -2868,7 +2866,7 @@ element.style {
   width: 20px;
   height: 20px;
   position: relative;
-  left: 530px;
+  left: 415px;
 }
 
 .product-menu__close::before {

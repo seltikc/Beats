@@ -38,7 +38,6 @@
   flex-direction: column;
   align-items: flex-start;
   width: rem(662px);
-  height: rem(391px);
   position: relative;
 
   @include tablets {
@@ -109,16 +108,6 @@
   display: flex;
   z-index: 10;
   flex-shrink: 0;
-  bottom: 0;
-  position: absolute;
-
-  @include tablets {
-    bottom: -16px;
-  }
-
-  @include phones {
-    height: 20px;
-  }
 }
 
 .duration__btn-wrap {
