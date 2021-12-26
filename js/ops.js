@@ -2,8 +2,8 @@ const section = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
-const mobileDetect = new MobileDetect(window.navigator.userAgent);
-const isMobile = mobileDetect.mobile();
+const detectMobil = new MobileDetect(window.navigator.userAgent);
+const isMobile = detectMobil.mobile();
 
 let inScroll = false;
 
