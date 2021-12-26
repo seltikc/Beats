@@ -5,17 +5,28 @@ const mesureWidth = item => {
   const container = item.closest(".product-menu");
   const titlesBlocks = container.find(".product-menu__title");
   const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const isTablets = window.matchMedia("(max-width: 768px)").matches;
+  const isMobile = window.matchMedia("(max-width: 480px)").matches;
 
   const textContainer = item.find(".product-menu__container");
   const paddingLeft = parseInt(textContainer.css("padding-left"));
   const paddingRight = parseInt(textContainer.css("padding-right"));
 
-  if (isMobile) {
-    reqItemWidth = screenWidth - titlesWidth;
-  } else {
-    reqItemWidth = 524;
+  if(isTablets) {
+    return screenWidth - titlesWidth;
   }
+  if(isMobile) {
+    return 90;
+  }
+  if(!isTablets && !isMobile) {
+    return 500;
+  }
+
+  // if (isMobile) {
+  //   reqItemWidth = screenWidth - titlesWidth;
+  // } else {
+  //   reqItemWidth = 524;
+  // }
 
   return {
     container: reqItemWidth,
