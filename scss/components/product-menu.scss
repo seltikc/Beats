@@ -8,13 +8,18 @@
 }
 
 .product-title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   position: absolute;
   top: rem(115px);
   left: 5.25rem;
+
+  @include phones {
+    font-size: rem(32px);
+    left: rem(10px);
+  }
 }
 
 .product-menu__subtitle {
@@ -45,6 +50,10 @@
   justify-content: flex-end;
   align-items: center;
   padding-bottom: rem(216px);
+
+  @include phones {
+    max-width: rem(90px);
+  }
 }
 
 .product-menu__title-gray {
@@ -69,7 +78,7 @@
 }
 
 .product-menu__container {
-  padding: 31px 53px 31px 38px;
+  padding: rem(31px)rem(53px)rem(31px)rem(38px);
   position: relative;
 }
 
@@ -79,6 +88,10 @@
   height: 20px;
   position: relative;
   left: 415px;
+  
+  @include phones {
+    left: rem(155px);
+  }
 }
 
 .product-menu__close::before {
