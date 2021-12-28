@@ -1,0 +1,54 @@
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.125rem 2.56rem;
+  border-radius: 6.25rem;
+  border: none;
+  cursor: pointer;
+
+  &-theme--price {
+    padding-top: rem(21px);
+    padding-bottom: rem(21px);
+  }
+
+  &-theme--red {
+    background: $color-red;
+    color: $color-white;
+    transition: 0.2s linear;
+
+    &:hover {
+      background: $coloro-red-hover;
+    }
+    @include tablets {
+      padding: 1.525rem 2.96rem;
+    }
+
+    @include phones {
+      font-size: rem(19px);
+      padding: 1.525rem 2.66rem;
+    }
+  }
+  &-theme--transparent {
+    background: transparent;
+    color: $color-white;
+    text-transform: none;
+    transition: 0.2s linear;
+    padding: 0.625rem;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+  
+}
+
+.btn-theme--price {
+
+  @include phones {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+

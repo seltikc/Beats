@@ -1,0 +1,199 @@
+.product {
+  position: relative;
+}
+
+.product__container {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.product__wrap-img {
+  margin-right: rem(50px);
+  position: relative;
+  left: rem(30px);
+  top: rem(30px);
+
+  @include tablets {
+    width: 43%;
+    left: 1.1625rem;
+    top: 1.10625rem;
+    margin-right: 0;
+    margin-bottom: 4.4625rem;
+  }
+  
+  @include phones {
+    width: 70%;
+    left: 0;
+    top: 0;
+    margin-right: 0;
+    margin-bottom: rem(20px);
+  }
+}
+
+.product__inner {
+  max-width: rem(419px);
+  padding-left: rem(38px);
+
+  @include tablets {
+    max-width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.product__structure {
+  position: relative;
+  width: rem(91px);
+  height: rem(91px);
+  margin-bottom: rem(25px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.product__structure:hover .product__dropdown {
+  left: 100%;
+  opacity: 1;
+}
+
+.product__gear-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: rem(5px);
+  background: #9A9A9A;
+  position: relative;
+}
+  
+.product__gear {
+  width: rem(42px);
+  height: rem(42px);
+  fill: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 21px);
+  cursor: pointer;
+}
+
+.product__subtitle {
+  color: $color-title;
+  text-transform: uppercase;
+  font-size: rem(36px);
+  font-weight: 700;
+  line-height: rem(41px);
+  
+
+  @include tablets {
+    font-size: rem(28px);
+    letter-spacing: rem(1.2px);
+    margin-bottom: 13px;
+    margin-left: 35px;
+  }
+
+  @include phones {
+    text-align: center;
+    margin-left: rem(4px);
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+  }
+}
+
+.product__content {
+  width: rem(368px);
+
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.product__desc {
+  margin-bottom: rem(35px);
+
+  @include tablets {
+    padding: 0px 24px 0 60px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 1.9875rem;
+  }
+
+  @include phones {
+    padding: 0 rem(14px);
+    padding: 0 1.375rem;
+  }
+}
+
+.product__specifications {
+  display: flex;
+  justify-content: flex-start;
+  gap: rem(86px);
+  margin-bottom: rem(24px);
+
+  @include tablets {
+    justify-content: center;
+    margin-left: rem(17px);
+  }
+
+  @include phones {
+    margin-left: -0.7375rem;
+  }
+}
+
+.product__charging {
+  
+  @include tablets {
+    margin-right: 8px;
+  }
+}
+
+.product__charging span, .product__weight span{
+  display: inline-block;
+}
+
+.product__clock {
+  font-size: rem(18px);
+  font-weight: 700;
+  color: #000;
+}
+
+.product__order {
+  display: flex;
+  align-items: center;
+  gap: rem(20px);
+
+  @include tablets {
+    justify-content: center;
+    margin-left: rem(37px);
+    gap: 2.65rem;
+  }
+
+  @include phones{
+    margin-left: 0.0125rem;
+    gap: 1.85rem;
+  }
+}
+
+.product__price {
+  color: #000;
+  font-size: rem(36px);
+
+  @include tablets {
+    font-size: 2.65rem;
+  }
+
+  @include phones {
+    font-size: rem(32px);
+  }
+}

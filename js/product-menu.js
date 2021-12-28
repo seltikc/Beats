@@ -12,21 +12,21 @@ const mesureWidth = item => {
   const paddingLeft = parseInt(textContainer.css("padding-left"));
   const paddingRight = parseInt(textContainer.css("padding-right"));
 
-  if(isTablets) {
-    return screenWidth - titlesWidth;
-  }
-  if(isMobile) {
-    return 90;
-  }
-  if(!isTablets && !isMobile) {
-    return 500;
-  }
-
-  // if (isMobile) {
-  //   reqItemWidth = screenWidth - titlesWidth;
-  // } else {
-  //   reqItemWidth = 524;
+  // if(isTablets) {
+  //   return screenWidth - titlesWidth;
   // }
+  // if(isMobile) {
+  //   return 90;
+  // }
+  // if(!isTablets && !isMobile) {
+  //   return 500;
+  // }
+
+  if (isMobile) {
+    reqItemWidth = screenWidth - titlesWidth;
+  } else {
+    reqItemWidth = 524;
+  }
 
   return {
     container: reqItemWidth,

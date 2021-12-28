@@ -1,0 +1,104 @@
+.page {
+  background: #F5F5F5;
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  color: $color-text;
+  position: relative;
+}
+
+.page__container {
+  background: url("../image/ellipse.png") right center / 57% no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.56rem 0 3.125rem 0;
+  position: relative;
+
+  @include tablets {
+    background: url("../image/ellipse.png") top 194px center / 45% no-repeat;
+    padding-bottom: rem(207px);
+  }
+  
+  @include phones {
+    background: url("../image/ellipse.png") top 107px center / 71% no-repeat;
+    padding-bottom: 5.6375rem;
+    letter-spacing: 0.8px;
+  }
+
+  &::before {
+    content: url("../image/decor/rectangle.png");
+    position: absolute;
+    bottom: rem(-22px);
+    right: rem(47px);
+
+    @include tablets {
+      bottom: rem(0px);
+      right: rem(64px);
+    }
+    @include phones {
+      bottom: 0;
+      right: 2.6rem;
+    }
+  }
+}
+
+
+.page__title-section {
+  width: 46%;
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.page__main-title {
+  color: $color-title;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.375rem;
+  max-width: rem(630px);
+
+  @include tablets {
+    margin-bottom: rem(7.5px);
+    letter-spacing: 2.1px;
+    max-width: 684px;
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+    padding: 0 10%;
+    margin-bottom: 0.9625rem;
+  }
+}
+
+.page__title-desc {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: $color-title;
+  margin-bottom: rem(30px);
+  padding-right: 22%;
+
+  @include tablets {
+    padding-right: 0;
+    padding: 0 24%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include phones{
+    width: 21.5625rem;
+    padding: 0;
+    margin-bottom: 1.475rem;
+  }
+}

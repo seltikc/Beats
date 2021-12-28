@@ -1,0 +1,142 @@
+.reviews__display {
+  background: #F8FAF9;
+  padding: 2.6rem 2.6rem 2.6rem;
+  margin-bottom: 0.93rem;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 5.18rem;
+    height: 5.18rem;
+    background: $color-white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-58px);
+  }
+
+  @include phones {
+    margin-bottom: rem(80px);
+    padding: rem(37px) rem(38px) rem(23px) rem(24px);
+  }
+}
+
+.reviews__display-list {
+  position: relative;
+  min-height: rem(300px);
+  display: flex;
+}
+
+.reviews__displat-item {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: .3s linear;
+  opacity: 0;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: rem(26px);
+  }
+}
+
+.reviews__displat-item--active {
+  position: static;
+  opacity: 1;
+}
+
+.reviews__avatar {
+  width: 15.81rem;
+  height: 16.5rem;
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
+
+  @include phones {
+    width: rem(140px);
+    height: rem(140px);
+  }
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  padding-top: 2.3rem;
+  padding-right: 12%;
+  line-height: 1.2;
+  flex: 1;
+  margin-left: 2.375rem;
+
+  @include tablets{
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  @include phones {
+    padding-top: 1.2rem;
+  }
+}
+
+.reviews__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-title;
+  margin-bottom: 1.68rem;
+
+  @include tablets {
+    margin-bottom: 1.28rem;
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
+    letter-spacing: 1.2px;
+  }
+}
+
+.reviews__text {
+  padding-bottom: rem(42px);
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.reviews__author {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $color-title;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  left: -0.15rem;
+
+  @include tablets {
+    position: relative;
+    top: rem(23px); 
+    left: rem(3px);   
+  }
+
+  @include phones {
+    position: relative;
+    top: -0.9625rem;
+    left: rem(5px);
+  }
+}

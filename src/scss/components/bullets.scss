@@ -1,0 +1,17 @@
+.bullets {
+  display: flex;
+
+  &__item {
+    margin-right: 0.5rem;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.bullets {
+  @include tablets {
+    display: none;
+  }
+}
+

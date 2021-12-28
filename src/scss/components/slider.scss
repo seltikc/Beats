@@ -1,0 +1,85 @@
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  // align-items: flex-start;
+}
+
+.products .slick-arrow {
+  position: absolute;
+  top: 53%;
+  z-index: 10;
+  font-size: 0;
+  width: 24px;
+  height: 40px;
+}
+
+.products .slick-arrow.slick-prev {
+  left: rem(-24px);
+  background: url("../image/product/left.svg") 0 0 /100% no-repeat;
+  top: rem(235px);
+
+  @include tablets {
+    left: rem(142px);
+    top: rem(183px);
+  }
+
+  @include phones {
+    left: -0.175rem;
+    top: 8.8375rem;
+  }
+}
+
+.products .slick-arrow.slick-next {
+  right: rem(-24px);
+  background: url("../image/product/right.svg") 0 0 /100% no-repeat;
+  top: rem(235px);
+
+  @include tablets {
+    right: rem(113px);
+    top: rem(183px);
+  }
+
+  @include phones {
+    right: -0.3375rem;
+    top: 8.8375rem;
+  }
+}
+
+.products .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.products .slick-dots li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.products .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: $color-text;
+  border-radius: 50%;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.products .slick-dots li.slick-active button {
+  background-color: $color-red;
+
+
+}

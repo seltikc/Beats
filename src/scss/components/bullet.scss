@@ -1,0 +1,22 @@
+.bullet {
+  display: flex;
+}
+
+
+.bullet__icon {
+  width: 2.56rem;
+  height: 2.56rem;
+  margin-right: 0.625rem;
+}
+
+.bullet__svg {
+  width: rem(41px);
+  height: rem(41px);
+}
+
+
+
+.bullet__text {
+  max-width: 7.125rem;
+  line-height: 1.3;
+}

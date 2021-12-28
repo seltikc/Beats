@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: rem(20px);
+
+  @include tablets {
+    left: rem(-27px);
+  }
+
+  @include phones {
+    left: rem(-4px);
+  }
+
+  &__item {
+    margin-left: rem(10px);
+
+    @include phones {
+      margin-left: 0.825rem;
+    }
+  }
+
+  &__svg {
+    width: rem(30px);
+    height: rem(30px);
+    fill: #B3B3B3;
+    transition: all 0.5s;
+
+    @include tablets {
+      width: 2.075rem;
+      height: 2.075rem;
+    }
+
+    @include phones {
+      width: 1.675rem;
+      height: 1.675rem;
+    }
+  }
+
+  &__svg--active {
+    fill: #000;
+  }
+
+  &__svg:hover {
+    fill: #000;
+  }
+}
+
+
+
