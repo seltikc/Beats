@@ -7,8 +7,19 @@
   @include tablets {
     display: none;
   }
-}
-
+  &--white {
+    .fixed-menu__item--active {
+      .fixed-menu__link {
+        border-color: #fff;
+      }
+    }
+    .fixed-menu__link {
+      &::before {
+        background: #fff;
+      }
+    }
+  }
+} 
 .fixed-menu__item {
   margin-bottom: rem(5px);
 
