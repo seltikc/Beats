@@ -31,6 +31,11 @@ task("copy:image", () => {
   .pipe(dest("dist/image/"))
 });
 
+task("copy:video", () => {
+  return src("src/video/*.*")
+  .pipe(dest("dist/video/"))
+});
+
 
 const styles = [
   // "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
@@ -104,6 +109,6 @@ watch("src/scss/**/*.scss", series("styles"));
 watch("src/*.html", series("copy:html"));
 watch("src/js/*.js", series("scripts"));
 watch("src/image/**/*.svg", series("scripts"));
-task("default", series("clean", "copy:html", "copy:image", "styles", "scripts", "server"));
+task("default", series("clean", "copy:html", "copy:image", "copy:video", "styles", "scripts", "server"));
 
 
