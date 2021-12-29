@@ -5,8 +5,7 @@ const menuItems = sideMenu.find(".fixed-menu__item");
 const detectMobil = new MobileDetect(window.navigator.userAgent);
 const isMobile = detectMobil.mobile();
 
-let inScroll = false;
-
+window.isScrollBlocked = false;
 section.first().addClass("active");
 
 const countSectionPosition = sectionEq => {
@@ -26,9 +25,9 @@ const changeMenuThemeForSection = sectionEq => {
   const activeClass = "fixed-menu--white";
 
     if(menuTheme == "black") {
-      sideMenu.addClass(activeClass);
-    }else {
       sideMenu.removeClass(activeClass);
+    }else {
+      sideMenu.addClass(activeClass);
     }
 
 }
@@ -39,12 +38,12 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 
 const performTransition = sectionEq => {
 
-  if(inScroll) return;
+  if(window.isScrollBlocked) return;
 
   const transitionOver = 1000;
   const mouseInertiaOver = 300;
 
-    inScroll = true;
+  window.isScrollBlocked = true;
 
     const position = countSectionPosition(sectionEq);
 
@@ -57,7 +56,7 @@ const performTransition = sectionEq => {
   resetActiveClassForItem(section, sectionEq, "active");
 
   setTimeout(() => {
-    inScroll = false;
+    window.isScrollBlocked = false;
 
   resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active")
 

@@ -25,10 +25,6 @@ task("copy:html", () => {
     .pipe(reload({ stream: true }))
 });
 
-task("copy:sass", () => {
-  return src("src/scss/**/*.css")
-    
-});
 
 task("copy:image", () => {
   return src("src/image/**/*.*")
@@ -37,7 +33,7 @@ task("copy:image", () => {
 
 
 const styles = [
-  "node_modules/normalize.css/normalize.css",
+  // "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
   "src/scss/main.scss"
 ];
 
@@ -58,6 +54,9 @@ task("styles", () => {
 
 const libs = [
   "node_modules/jquery/dist/jquery.js",
+  "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
+  "node_modules/mobile-detect/mobile-detect.js",
+  "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
   "src/js/*.js"
 ]
 
@@ -105,6 +104,6 @@ watch("src/scss/**/*.scss", series("styles"));
 watch("src/*.html", series("copy:html"));
 watch("src/js/*.js", series("scripts"));
 watch("src/image/**/*.svg", series("scripts"));
-task("default", series("clean", "copy:html", "copy:image", "copy:sass", "styles", "scripts", "server"));
+task("default", series("clean", "copy:html", "copy:image", "styles", "scripts", "server"));
 
 

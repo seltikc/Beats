@@ -36,10 +36,24 @@
   right: 0;
   top: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
 }
 
 .product-menu-item {
   display: flex;
+
+  @include tablets {
+    &.active {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
 }
 
 .product-menu__title {
@@ -86,12 +100,8 @@
   background: transparent;
   width: 20px;
   height: 20px;
-  position: relative;
-  left: 415px;
-  
-  @include phones {
-    left: rem(155px);
-  }
+  position: absolute;
+  right: 10px;
 }
 
 .product-menu__close::before {

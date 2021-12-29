@@ -1,6 +1,6 @@
 const myForm = document.querySelector("#myForm");
 const sendButton = document.querySelector("#sendButton");
-const modalText = document.querySelector(".modal_messege")
+const modalText = document.querySelector(".modal__message")
 const modslCloseBtn = document.querySelector(".app-submit-btn")
 
 modslCloseBtn.addEventListener("click", e => {
@@ -30,10 +30,7 @@ sendButton.addEventListener("click", function(event) {
     xhr.setRequestHeader("X-Requested-Width", "XMLHttpRequest");
     xhr.send(formData)
     xhr.addEventListener("load", () => { 
-      $.fancybox.open({
-        src: ".modal-form",
-        type: "inline"
-        });
+
         document.body.classList.add("locked");
 
       if (xhr.response.status) {
@@ -41,6 +38,11 @@ sendButton.addEventListener("click", function(event) {
       }else {
         modalText.innerHTML = "Произошла ошибка";
       }
+      $.fancybox.open({
+        src: ".modal-form",
+        type: "inline",
+
+      });
     })
   }
 });

@@ -1,6 +1,5 @@
 /*=========Layout===========*/
 
-@import "layout/normalize.scss";
 @import "layout/fonts.scss";
 @import "layout/var.scss";
 @import "layout/media.scss";
@@ -10,7 +9,7 @@
 
 /*=========Components===========*/
 
-
+@import "components/page.scss";
 @import "components/header.scss";
 @import "components/btn.scss";
 @import "components/section.scss";
