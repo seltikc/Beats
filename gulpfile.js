@@ -28,7 +28,7 @@ task("copy:html", () => {
 
 task("copy:image", () => {
   return src("src/image/**/*.*")
-  .pipe(dest("dist/image"))
+  .pipe(dest("dist/image/"))
 });
 
 
@@ -49,7 +49,7 @@ task("styles", () => {
     .pipe(gcmq())
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())
-    .pipe(dest("dist"));
+    .pipe(dest("dist/css"));
 });
 
 const libs = [
